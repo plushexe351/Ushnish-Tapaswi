@@ -1,0 +1,175 @@
+// Breakpoint definitions
+$mediumDevice: 768px;
+$smallerDevice: 600px;
+$smallDevice: 480px;
+$smallestDevice: 320px;
+
+// Mixin for medium devices
+@mixin mediumDevice {
+  @media (max-width: $mediumDevice) {
+    @content;
+  }
+}
+
+// Mixin for smaller devices
+@mixin smallerDevice {
+  @media (max-width: $smallerDevice) {
+    @content;
+  }
+}
+
+// Mixin for small devices
+@mixin smallDevice {
+  @media (max-width: $smallDevice) {
+    @content;
+  }
+}
+
+// Mixin for smallest devices
+@mixin smallestDevice {
+  @media (max-width: $smallestDevice) {
+    @content;
+  }
+}
+
+.profileCard {
+  display: flex;
+  justify-content: center;
+  //   align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+  .hero {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-direction: column;
+    @include smallDevice {
+      flex-direction: row;
+      justify-content: start;
+    }
+  }
+  #profile-image {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    min-height: 45px;
+    min-width: 45px;
+    object-fit: cover;
+    @include mediumDevice {
+      height: 200px;
+      width: 200px;
+    }
+    @include smallerDevice {
+      width: 100px;
+      height: 100px;
+    }
+    @include smallDevice {
+      width: 45px;
+      height: 45px;
+    }
+  }
+  #name {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 0.5rem;
+    .wordbreak {
+      height: 3px;
+      width: 3px;
+      border-radius: 50%;
+      background-color: gray;
+    }
+    span {
+      color: gray;
+      font-weight: normal;
+    }
+    @include smallDevice {
+      font-size: 1rem;
+    }
+  }
+  #location {
+    display: flex;
+    // justify-content: center;
+    align-items: center;
+    gap: 0.2rem;
+    color: gray;
+    font-size: 1.2rem;
+    @include smallDevice {
+      font-size: 1rem;
+    }
+  }
+  .description {
+    font-size: 1rem;
+  }
+  .actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    > * {
+      padding: 0.5rem 1rem;
+      font-size: 0.8rem;
+      flex: 1;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 0.4rem;
+      background-color: rgba(190, 130, 230, 0.2);
+      color: white;
+      border: 1px solid rgba(128, 128, 128, 0.259);
+      &:nth-child(2) {
+        background-color: #8e5bb7;
+      }
+    }
+  }
+  .socials {
+    margin-top: 0.5rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.8rem;
+    > * {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: white;
+      text-decoration: none;
+      &:hover {
+        color: #8e5bb7;
+        text-decoration: underline;
+      }
+    }
+  }
+  .certifications {
+    .certifications--title {
+      display: flex;
+      align-items: center;
+      gap: 0.1rem;
+      font-size: 1rem;
+      font-weight: 600;
+    }
+    .certificates {
+      margin-block: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      .certificate {
+        display: flex;
+        align-items: center;
+        img {
+          height: 40px;
+          width: 40px;
+          border-radius: 50%;
+          background-color: white;
+          object-fit: contain;
+        }
+      }
+    }
+    .viewRemainingCertificates,
+    .certifications--title {
+      cursor: pointer;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

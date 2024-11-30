@@ -1,0 +1,57 @@
+.readme {
+  border: 1px solid rgba(128, 128, 128, 0.459);
+  border-radius: 0.4rem;
+  overflow: auto;
+  .menubar {
+    display: flex;
+    padding: 0.5rem;
+    align-items: center;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.459);
+    background-color: rgba(190, 130, 230, 0.1);
+    .navbar {
+      border: 1px solid rgba(128, 128, 128, 0.259);
+      border-radius: 0.4rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgba(170, 109, 211, 0.2);
+    }
+    .nav-item {
+      border-radius: 0.4rem;
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+      &.active {
+        outline: 1px solid rgba(128, 128, 128, 0.659);
+        background-color: rgba(3, 6, 10, 255);
+      }
+    }
+  }
+  .aboutMe,
+  .experience {
+    padding: 1.5rem;
+
+    .social-badges {
+      margin-block: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    blockquote {
+      margin: 1em 0;
+      padding: 0.5em 1em;
+      border-left: 4px solid rgba(128, 128, 128, 0.459);
+      background-color: transparent;
+      font-style: italic;
+      color: #6a737d;
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+    .techstack {
+      margin-bottom: 1rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.2rem;
+      align-items: center;
+    }
+  }
+}

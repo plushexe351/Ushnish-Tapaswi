@@ -1,0 +1,46 @@
+// Breakpoint definitions
+$mediumDevice: 768px;
+$smallerDevice: 600px;
+$smallDevice: 480px;
+$smallestDevice: 320px;
+
+// Mixin for medium devices
+@mixin mediumDevice {
+  @media (max-width: $mediumDevice) {
+    @content;
+  }
+}
+
+// Mixin for smaller devices
+@mixin smallerDevice {
+  @media (max-width: $smallerDevice) {
+    @content;
+  }
+}
+
+// Mixin for small devices
+@mixin smallDevice {
+  @media (max-width: $smallDevice) {
+    @content;
+  }
+}
+
+// Mixin for smallest devices
+@mixin smallestDevice {
+  @media (max-width: $smallestDevice) {
+    @content;
+  }
+}
+
+.overview {
+  flex-direction: row-reverse;
+  min-height: 100vh;
+  width: 100%;
+  padding: 6rem 1rem 2rem 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  @include mediumDevice {
+    flex-direction: column;
+  }
+}

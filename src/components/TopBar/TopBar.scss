@@ -1,0 +1,56 @@
+$smallDevice: 480px;
+
+@mixin smallDevice {
+  @media (max-width: $smallDevice) {
+    @content;
+  }
+}
+
+.topbar {
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-inline: 1rem;
+  padding-top: 1rem;
+  @include smallDevice {
+    padding-top: 0.5rem;
+  }
+  nav {
+    background-color: #110b16b7;
+    backdrop-filter: blur(1rem);
+    -webkit-backdrop-filter: blur(1rem);
+    box-shadow: 0 0 2rem #000000;
+    border: 1px solid rgba(128, 128, 128, 0.459);
+    border-radius: 1rem;
+    max-width: 100%;
+    overflow: auto;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 0.5rem;
+    display: flex;
+    gap: 0.5rem;
+    .nav-item {
+      border-radius: 0.5rem;
+      padding: 0.5rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0.5rem;
+      color: white;
+      text-decoration: none;
+      transition: 0.1s ease;
+      &:hover {
+        background-color: rgba(33, 40, 48, 0.441);
+      }
+      &.active {
+        background-color: rgba(190, 130, 230, 0.2);
+      }
+    }
+  }
+}
