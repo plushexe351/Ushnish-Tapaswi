@@ -7,7 +7,7 @@ const AnimatedPageWrapper = ({ children, pageName }) => {
       <motion.div
         key={pageName}
         className={pageName.toLowerCase()}
-        initial={{ opacity: 0, y: "100vh" }}
+        initial={{ opacity: 0, y: "80vh" }}
         animate={{ opacity: 1, y: 0 }}
         exit={{ opacity: 0, y: "-100vh" }}
         transition={{ duration: 0.5 }}
