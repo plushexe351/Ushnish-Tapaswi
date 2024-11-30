@@ -3,24 +3,38 @@ import chatapp from "../../assets/chatApp.png";
 import euphoria from "../../assets/Euphoria.png";
 import flappyBird from "../../assets/flappyBird.png";
 import iPodSimulator from "../../assets/iPodSimulator.png";
-
+import noteme from "../../assets/noteme.png";
+import gcc from "../../assets/gcc.png";
+import pos from "../../assets/pos.png";
 import "./TopProjects.scss";
+import { Code, Globe } from "react-feather";
 
-const TopProjects = () => {
-  const TopProjects = [
+const TopProjects = ({ filter }) => {
+  const projects = [
     {
       name: "Twixt Chat",
-      description: "A Realtime Chat App with AI messaging tools ",
+      description: "A Realtime Chat App with AI messaging tools",
       techStack: ["React", "Firebase", "Sass"],
       thumbnail: chatapp,
+      pinned: true,
+      livePreviewURL: "",
+      sourceURL: "",
+    },
+    {
+      name: "github-contribution-calendar",
+      description: "A React Component for Github Contributions Map",
+      techStack: ["React", "CSS"],
+      thumbnail: gcc,
+      pinned: true,
       livePreviewURL: "",
       sourceURL: "",
     },
     {
       name: "Euphoria ChatBot",
       description: "A Gemini Based ChatBot-cum-assistant",
-      techStack: ["React", "Firebase", "Sass"],
+      techStack: ["HTML", "CSS", "Google Gemini", "Node.js", "Express.js"],
       thumbnail: euphoria,
+      pinned: false,
       livePreviewURL: "",
       sourceURL: "",
     },
@@ -29,94 +43,93 @@ const TopProjects = () => {
       description: "An iPod Simulator made using Vanilla Js",
       techStack: ["HTML", "CSS", "Vanilla Js"],
       thumbnail: iPodSimulator,
+      pinned: false,
       livePreviewURL: "",
       sourceURL: "",
     },
+    {
+      name: "Noteme.md",
+      description: "Markdown Notebook with AI Writing Tools",
+      techStack: [
+        "React",
+        "MongoDB",
+        "Firebase",
+        "SASS",
+        "Node.js",
+        "Express.js",
+      ],
+      thumbnail: noteme,
+      pinned: true,
+      livePreviewURL: "",
+      sourceURL: "",
+    },
+    {
+      name: "Purchase Order System",
+      description:
+        "Purchase Order System with User, Vendor & Requisition Management and PO Generation",
+      techStack: ["React", "MySQL", "Node.js", "Express.js", "SASS"],
+      thumbnail: pos,
+      pinned: true,
+      livePreviewURL: "",
+      sourceURL: "",
+    },
+
     {
       name: "Flappy Bird",
       description: "A Simple Flappy Bird game made using HTML Canvas",
       techStack: ["HTML", "CSS", "HTML 5 Canvas"],
       thumbnail: flappyBird,
+      pinned: false,
       livePreviewURL: "",
       sourceURL: "",
     },
   ];
+
+  const filteredProjects =
+    filter === "pinned"
+      ? projects.filter((project) => project.pinned)
+      : projects;
+
+  const ProjectCard = ({ project }) => (
+    <div className="project">
+      <p className="project-title">
+        {project.name}
+        <span className="project--links">
+          {project.livePreviewURL && (
+            <a href={project.livePreviewURL} target="_blank" rel="noreferrer">
+              <Globe className="icon" title="Live Preview" />
+            </a>
+          )}
+          {project.sourceURL && (
+            <a href={project.sourceURL} target="_blank" rel="noreferrer">
+              <Code className="icon" title="Source Code" />
+            </a>
+          )}
+        </span>
+      </p>
+      <img src={project.thumbnail} alt={`${project.name} Thumbnail`} />
+      <div className="project-details">
+        <p className="project-description">{project.description}</p>
+        <div className="project--tech-stack">
+          {project.techStack.map((tech, index) => (
+            <span className="tech" key={index}>
+              {tech}
+            </span>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+
   return (
     <div className="topProjects">
-      <p className="projects--title">Pinned Projects</p>
+      <p className="projects--title">
+        {filter === "pinned" ? "Pinned Projects" : "Top Projects"}
+      </p>
       <div className="projects-container">
-        {TopProjects.map((project, index) => (
-          <div className="project" key={index}>
-            <p className="project-title">{project.name}</p>
-            <img src={project.thumbnail} alt="" />
-            <div className="project-details">
-              <p className="project-description">{project.description}</p>
-              <p className="project--tech-stack">
-                {project.techStack.map((tech, index) => (
-                  <div className="tech">{tech}</div>
-                ))}
-                {/* <div className="tech">Firebase</div>
-                <div className="tech">Sass</div>  */}
-              </p>
-            </div>
-          </div>
+        {filteredProjects.map((project, index) => (
+          <ProjectCard project={project} key={index} />
         ))}
-        {/* <div className="project">
-          <p className="project-title">Twixt Chat</p>
-          <img src={chatapp} alt="" />
-          <div className="project-details">
-            <p className="project-description">
-              A Chat App Made Using React And Sass
-            </p>
-            <p className="project--tech-stack">
-              <div className="tech">React</div>
-              <div className="tech">Firebase</div>
-              <div className="tech">Sass</div>
-            </p>
-          </div>
-        </div>
-        <div className="project">
-          <p className="project-title">Twixt Chat</p>
-          <img src={euphoria} alt="" />
-          <div className="project-details">
-            <p className="project-description">
-              A Chat App Made Using React And Sass
-            </p>
-            <p className="project--tech-stack">
-              <div className="tech">React</div>
-              <div className="tech">Firebase</div>
-              <div className="tech">Sass</div>
-            </p>
-          </div>
-        </div>
-        <div className="project">
-          <p className="project-title">Twixt Chat</p>
-          <img src={flappyBird} alt="" />
-          <div className="project-details">
-            <p className="project-description">
-              A Chat App Made Using React And Sass
-            </p>
-            <p className="project--tech-stack">
-              <div className="tech">React</div>
-              <div className="tech">Firebase</div>
-              <div className="tech">Sass</div>
-            </p>
-          </div>
-        </div>
-        <div className="project">
-          <p className="project-title">Twixt Chat</p>
-          <img src={iPodSimulator} alt="" />
-          <div className="project-details">
-            <p className="project-description">
-              A Chat App Made Using React And Sass
-            </p>
-            <p className="project--tech-stack">
-              <div className="tech">React</div>
-              <div className="tech">Firebase</div>
-              <div className="tech">Sass</div>
-            </p>
-          </div>
-        </div> */}
       </div>
     </div>
   );

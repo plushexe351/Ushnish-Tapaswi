@@ -11,11 +11,6 @@ $smallDevice: 480px;
   }
   .projects-container {
     margin-block: 1rem;
-    // display: flex;
-    // align-items: start;
-    // justify-content: center;
-    // flex-wrap: wrap;
-    // gap: 1rem;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(45%, 1fr));
     gap: 16px;
@@ -28,7 +23,6 @@ $smallDevice: 480px;
       flex-direction: column;
       border-radius: 0.4rem;
       border: 1px solid rgba(128, 128, 128, 0.459);
-
       overflow: auto;
       img {
         outline: 1px solid rgba(128, 128, 128, 0.259);
@@ -36,14 +30,24 @@ $smallDevice: 480px;
         object-fit: cover;
       }
       .project-title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         padding: 0.5rem;
         text-align: center;
         color: #8e5bb7;
         background-color: rgba(190, 130, 230, 0.1);
-        font-weight: 600;
         font-size: 1rem;
       }
+      .project--links {
+        font-size: 0.8rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+      }
       .project-details {
+        position: relative;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -53,7 +57,7 @@ $smallDevice: 480px;
         .project-description {
           font-weight: 300;
           color: lightgray;
-          font-size: 0.8rem;
+          font-size: 0.9rem;
         }
         .project--tech-stack {
           font-weight: 300;
