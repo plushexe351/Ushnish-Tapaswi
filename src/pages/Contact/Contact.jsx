@@ -6,8 +6,8 @@ import Main from "../../components/Main";
 const Contact = () => {
   return (
     <AnimatedPageWrapper pageName="contact">
-      <Side />
       <Main pageName="contact" />
+      <Side />
     </AnimatedPageWrapper>
   );
 };

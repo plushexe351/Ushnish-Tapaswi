@@ -8,8 +8,8 @@ import Main from "../../components/Main";
 const Projects = () => {
   return (
     <AnimatedPageWrapper pageName="projects">
-      <Side />
       <Main pageName="projects" />
+      <Side />
     </AnimatedPageWrapper>
   );
 };
