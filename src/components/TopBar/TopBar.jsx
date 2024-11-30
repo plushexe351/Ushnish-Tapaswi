@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import "./topbar.scss";
+import "./TopBar.scss";
 import { BookOpen, Grid, MessageSquare, Edit } from "react-feather";
 
 const TopBar = () => {
