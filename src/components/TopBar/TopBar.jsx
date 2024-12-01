@@ -20,11 +20,11 @@ const TopBar = () => {
       label: "Contact",
       icon: MessageSquare,
     },
-    {
-      path: "/blog",
-      label: "Blog",
-      icon: Edit,
-    },
+    // {
+    //   path: "/blog",
+    //   label: "Blog",
+    //   icon: Edit,
+    // },
   ];
 
   return (

@@ -73,12 +73,7 @@ $smallestDevice: 320px;
     justify-content: start;
     align-items: center;
     gap: 0.5rem;
-    .wordbreak {
-      height: 3px;
-      width: 3px;
-      border-radius: 50%;
-      background-color: gray;
-    }
+
     span {
       color: gray;
       font-weight: normal;

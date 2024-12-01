@@ -8,11 +8,13 @@ import TopBar from "./components/TopBar/TopBar";
 import Footer from "./components/Footer/Footer";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import ScrollToTop from "./ScrollToTop";
 
 function App() {
   return (
     <BrowserRouter>
       <div className="App">
+        <ScrollToTop />
         <TopBar />
         <Routes>
           <Route path="/" element={<Navigate to="/overview" />} />

@@ -1,21 +1,11 @@
 import React, { useState } from "react";
 import profileImage from "../../assets/profile-image.jpeg";
-import {
-  GitHub,
-  Link as LinkIcon,
-  Globe,
-  Linkedin,
-  Mail,
-  MapPin,
-  ChevronRight,
-} from "react-feather";
-import { Link, useNavigate } from "react-router-dom";
+import { GitHub, Linkedin, Mail, MapPin, ChevronRight } from "react-feather";
+import { useNavigate } from "react-router-dom";
 import "./ProfileCard.scss";
 import CV from "../../assets/CV.pdf";
-import cert1 from "../../assets/ibm-cert.png";
-import cert2 from "../../assets/edx-cert.png";
-import cert3 from "../../assets/edx-cert.png";
 import CertificationsModal from "../Modals/Certifications/CertificationsModal";
+import { certificates } from "../SharedData";
 
 const ProfileCard = () => {
   const [ModalOpen, setModalOpen] = useState(false);
@@ -67,29 +57,26 @@ const ProfileCard = () => {
           <a key={index} href={social.link} target="_blank">
             <social.icon className="icon" />
             {social.label}
-            {/* <LinkIcon className="icon" /> */}
           </a>
         ))}
       </div>
       <hr className="styled-break" />
-      <div className="certifications">
-        <p className="certifications--title" onClick={() => setModalOpen(true)}>
+      <div className="certifications" onClick={() => setModalOpen(true)}>
+        <p className="certifications--title">
           Certifications <ChevronRight className="icon" />
         </p>
         <div className="certificates">
-          <div className="certificate">
-            <img src={cert1} alt="" />
-            <p className="certificate-title"></p>
+          {certificates.map(
+            (certificate, index) =>
+              certificate.pinned && (
+                <div className="certificate" key={index}>
+                  <img src={certificate.logo} alt="" />
+                </div>
+              )
+          )}
+          <div className="viewRemainingCertificates">
+            +{certificates.filter((certificate) => !certificate.pinned).length}
           </div>
-          <div className="certificate">
-            <img src={cert2} alt="" />
-            <p className="certificate-title"></p>
-          </div>
-          <div className="certificate">
-            <img src={cert3} alt="" />
-            <p className="certificate-title"></p>
-          </div>
-          <div className="viewRemainingCertificates">+ 7</div>
         </div>
       </div>
       {ModalOpen && <CertificationsModal setModalOpen={setModalOpen} />}

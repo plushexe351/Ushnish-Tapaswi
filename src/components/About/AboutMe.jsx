@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 import "../tab.scss";
+import { experiences } from "./experiences";
+import euphoria from "../../assets/euphoria-cert.jpeg";
+import "./AboutMe.scss";
 
 const AboutMe = () => {
   const [view, setView] = useState("About me");
@@ -19,7 +22,33 @@ const AboutMe = () => {
         </div>
       </nav>
       {view === "Experience" && (
-        <div className="experience">100 years of coding</div>
+        <div className="experiences">
+          {experiences.map((experience, index) => (
+            <div className="experience" key={index}>
+              <img src={euphoria} alt="" />
+              <div className="experience-details">
+                <h3 className="experience-title">{experience.title}</h3>
+                <div className="experience-company">
+                  {experience.company && experience.company}
+                  <div className="wordbreak"></div>
+                  {experience.type}
+                </div>
+                <div className="experience-duration">{experience.duration}</div>
+                <div className="experience-location">{experience.location}</div>
+                <ul className="experience-description">
+                  {experience.description.map((each, index) => (
+                    <li key={index}>{each}</li>
+                  ))}
+                </ul>
+                <div className="experience-skills">
+                  {experience.skills.map((skill, index) => (
+                    <div>{skill}</div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
       )}
       {view === "About me" && (
         <div className="aboutMe">

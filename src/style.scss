@@ -69,6 +69,14 @@ html {
   width: 1rem;
 }
 
+.wordbreak {
+  flex-shrink: 0;
+  height: 3px;
+  width: 3px;
+  border-radius: 50%;
+  background-color: gray;
+}
+
 .styled-break {
   margin-block: 0.5rem;
   width: 100%;
