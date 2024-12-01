@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import profileImage from "../../assets/profile-image.jpeg";
 import {
   GitHub,
@@ -9,14 +9,17 @@ import {
   MapPin,
   ChevronRight,
 } from "react-feather";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "./ProfileCard.scss";
 import CV from "../../assets/CV.pdf";
 import cert1 from "../../assets/ibm-cert.png";
 import cert2 from "../../assets/edx-cert.png";
 import cert3 from "../../assets/edx-cert.png";
+import CertificationsModal from "../Modals/Certifications/CertificationsModal";
 
 const ProfileCard = () => {
+  const [ModalOpen, setModalOpen] = useState(false);
+  const Navigate = useNavigate();
   const socials = [
     {
       label: "Ushnish Tapaswi",
@@ -34,6 +37,10 @@ const ProfileCard = () => {
       link: "https://github.com/plushexe351",
     },
   ];
+
+  const handleHireMeClick = () => {
+    Navigate("/contact");
+  };
   return (
     <div className="profileCard">
       <div className="hero">
@@ -53,7 +60,7 @@ const ProfileCard = () => {
         <a href={CV} download="Ushnish_Tapaswi.pdf">
           Resume
         </a>
-        <a href="mailto:iamushnishtapaswi@gmail.com">Hire me</a>
+        <p onClick={handleHireMeClick}>Hire me</p>
       </div>
       <div className="socials">
         {socials.map((social, index) => (
@@ -66,7 +73,7 @@ const ProfileCard = () => {
       </div>
       <hr className="styled-break" />
       <div className="certifications">
-        <p className="certifications--title">
+        <p className="certifications--title" onClick={() => setModalOpen(true)}>
           Certifications <ChevronRight className="icon" />
         </p>
         <div className="certificates">
@@ -85,6 +92,7 @@ const ProfileCard = () => {
           <div className="viewRemainingCertificates">+ 7</div>
         </div>
       </div>
+      {ModalOpen && <CertificationsModal setModalOpen={setModalOpen} />}
     </div>
   );
 };

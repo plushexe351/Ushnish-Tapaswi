@@ -67,7 +67,7 @@ const ContactForm = () => {
           type="email"
           name="from_email"
           id="email"
-          required
+          required6
           value={formData.from_email}
           onChange={handleChange}
           placeholder="Your Email"

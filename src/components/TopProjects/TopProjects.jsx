@@ -17,8 +17,8 @@ const TopProjects = ({ filter }) => {
       techStack: ["React", "Firebase", "Sass"],
       thumbnail: chatapp,
       pinned: true,
-      livePreviewURL: "",
-      sourceURL: "",
+      livePreviewURL: "https://react-chat-app-jet.vercel.app/",
+      sourceURL: "https://github.com/plushexe351/react-chat-app",
     },
     {
       name: "github-contribution-calendar",
@@ -96,13 +96,23 @@ const TopProjects = ({ filter }) => {
         {project.name}
         <span className="project--links">
           {project.livePreviewURL && (
-            <a href={project.livePreviewURL} target="_blank" rel="noreferrer">
-              <Globe className="icon" title="Live Preview" />
+            <a
+              href={project.livePreviewURL}
+              target="_blank"
+              rel="noreferrer"
+              title="Live Preview"
+            >
+              <Globe className="icon" />
             </a>
           )}
           {project.sourceURL && (
-            <a href={project.sourceURL} target="_blank" rel="noreferrer">
-              <Code className="icon" title="Source Code" />
+            <a
+              href={project.sourceURL}
+              target="_blank"
+              rel="noreferrer"
+              title="Source Code"
+            >
+              <Code className="icon" />
             </a>
           )}
         </span>
