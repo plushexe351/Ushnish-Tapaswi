@@ -1,0 +1,45 @@
+.contactForm {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  label {
+    font-size: 0.8rem;
+  }
+  input,
+  textarea {
+    font-size: 0.9rem;
+    border: 1px solid rgba(128, 128, 128, 0.459);
+    color: white;
+    border-radius: 0.3rem;
+    background-color: rgba(190, 130, 230, 0.1);
+    padding: 0.7rem 1rem;
+  }
+  fieldset {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    flex: 1;
+  }
+  #messageBox,
+  #subjectField {
+    min-width: 100%;
+  }
+  #messageBox textarea {
+    height: 200px;
+  }
+  #submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.2rem;
+    padding: 0.5rem 2rem;
+    font-size: 0.8rem;
+    border-radius: 0.4rem;
+    background-color: #8e5bb7;
+    color: white;
+    border: 1px solid rgba(128, 128, 128, 0.459);
+  }
+}

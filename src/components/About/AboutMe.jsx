@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-import "./AboutMe.scss";
+import "../tab.scss";
 
 const AboutMe = () => {
   const [view, setView] = useState("About me");
   const navItems = ["About me", "Experience"];
   return (
-    <div className="readme">
+    <div className="tab">
       <nav className="menubar">
         <div className="navbar">
           {navItems.map((item, index) => (

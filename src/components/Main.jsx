@@ -2,8 +2,10 @@ import React from "react";
 import ProfileCard from "./ProfileCard/ProfileCard";
 import AboutMe from "./About/AboutMe";
 import TopProjects from "./TopProjects/TopProjects";
-import WorkXp from "./WorkXp";
 import { GitHubCalendar } from "github-contribution-calendar";
+import ContactTab from "./ContactTab/ContactTab";
+import { h1 } from "framer-motion/client";
+import WIP from "./WIP/WIP";
 const token = import.meta.env.VITE_API_GITHUB_ACCESS_TOKEN;
 
 const pageContent = {
@@ -24,8 +26,8 @@ const pageContent = {
     </>
   ),
   projects: <TopProjects filter="all" />,
-  contact: <AboutMe />,
-  blog: <AboutMe />,
+  contact: <ContactTab />,
+  blog: <WIP />,
 };
 
 const Main = ({ pageName }) => {
