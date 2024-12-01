@@ -6,6 +6,7 @@ import "./ProfileCard.scss";
 import CV from "../../assets/CV.pdf";
 import CertificationsModal from "../Modals/Certifications/CertificationsModal";
 import { certificates } from "../SharedData";
+import LazyImage from "../LazyImage";
 
 const ProfileCard = () => {
   const [ModalOpen, setModalOpen] = useState(false);
@@ -34,7 +35,7 @@ const ProfileCard = () => {
   return (
     <div className="profileCard">
       <div className="hero">
-        <img src={profileImage} alt="" id="profile-image" />
+        <LazyImage src={profileImage} alt="" id="profile-image" />
         <div className="title">
           <h2 id="name">
             Ushnish Tapaswi <span className="wordbreak"></span>

@@ -8,6 +8,7 @@ import gcc from "../../assets/gcc.png";
 import pos from "../../assets/pos.png";
 import "./TopProjects.scss";
 import { Code, Globe } from "react-feather";
+import LazyImage from "../LazyImage";
 
 const TopProjects = ({ filter }) => {
   const projects = [
@@ -117,7 +118,7 @@ const TopProjects = ({ filter }) => {
           )}
         </span>
       </p>
-      <img src={project.thumbnail} alt={`${project.name} Thumbnail`} />
+      <LazyImage src={project.thumbnail} alt={`${project.name} Thumbnail`} />
       <div className="project-details">
         <p className="project-description">{project.description}</p>
         <div className="project--tech-stack">
