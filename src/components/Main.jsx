@@ -31,7 +31,7 @@ const pageContent = {
 };
 
 const Main = ({ pageName }) => {
-  return <main>{pageContent[pageName] || null}</main>;
+  return <main key={pageName}>{pageContent[pageName] || null}</main>;
 };
 
 export default Main;

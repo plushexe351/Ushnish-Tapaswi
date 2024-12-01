@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import AnimatedPageWrapper from "../AnimatedPageWrapper";
 import Side from "../../components/Side";
 import Main from "../../components/Main";
@@ -6,8 +6,8 @@ import Main from "../../components/Main";
 const Contact = () => {
   return (
     <AnimatedPageWrapper pageName="contact">
-      <Main pageName="contact" />
       <Side />
+      <Main pageName="contact" />
     </AnimatedPageWrapper>
   );
 };

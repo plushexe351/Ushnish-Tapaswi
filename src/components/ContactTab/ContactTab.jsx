@@ -20,16 +20,10 @@ const ContactTab = () => {
           ))}
         </div>
       </nav>
-      {/* {view === "Socials" && (
-        <div className="experience">100 years of coding</div>
-      )} */}
       {view === "Message Me" && (
         <div className="aboutMe">
           <h1 id="greet">Send me a message 💬</h1>
           <hr className="styled-break" />
-          {/* <div className="description">
-            <p>Send me a message.</p>
-          </div> */}
           <ContactForm />
         </div>
       )}
