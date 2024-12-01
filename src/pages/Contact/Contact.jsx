@@ -2,12 +2,13 @@ import React, { useEffect } from "react";
 import AnimatedPageWrapper from "../AnimatedPageWrapper";
 import Side from "../../components/Side";
 import Main from "../../components/Main";
+import ScrollToTop from "../../ScrollToTop";
 
 const Contact = () => {
   return (
     <AnimatedPageWrapper pageName="contact">
-      <Side />
       <Main pageName="contact" />
+      <Side />
     </AnimatedPageWrapper>
   );
 };

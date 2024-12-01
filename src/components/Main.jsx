@@ -7,7 +7,7 @@ import ContactTab from "./ContactTab/ContactTab";
 import { h1 } from "framer-motion/client";
 import WIP from "./WIP/WIP";
 const token = import.meta.env.VITE_API_GITHUB_ACCESS_TOKEN;
-
+import { motion, AnimatePresence } from "framer-motion";
 const pageContent = {
   overview: (
     <>
@@ -31,7 +31,20 @@ const pageContent = {
 };
 
 const Main = ({ pageName }) => {
-  return <main key={pageName}>{pageContent[pageName] || null}</main>;
+  return (
+    <AnimatePresence mode="wait">
+      <motion.main
+        key={pageName}
+        initial={{ opacity: 0, y: "8vh" }}
+        animate={{ opacity: 1, y: 0 }}
+        exit={{ opacity: 0, y: "-8vh" }}
+        transition={{ duration: 0.3 }}
+      >
+        {pageContent[pageName] || null}
+      </motion.main>
+      ;
+    </AnimatePresence>
+  );
 };
 
 export default Main;
