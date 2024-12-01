@@ -11,12 +11,14 @@ const ModalWrapper = ({ children, title, setModalOpen }) => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.3 }}
+        onClick={() => setModalOpen(false)}
       >
         <motion.div
           className="modal-container"
           initial={{ opacity: 0, y: "2vh" }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.2 }}
+          onClick={(e) => e.stopPropagation()}
         >
           <div className="modal-topbar">
             <div className="close" onClick={() => setModalOpen(false)}></div>
