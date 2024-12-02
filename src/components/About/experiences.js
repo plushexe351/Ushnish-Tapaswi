@@ -3,7 +3,7 @@ const experiences = [
       title: "Software Development Intern",
       company: "NSHM Knowledge Campus, Kolkata",
       type: "Internship",
-      duration: "Jul 2024 - Present · 6 mos",
+      duration: "Jul 2024 - Present",
       location: "Kolkata, West Bengal, India · Hybrid",
       description: [
         "Developing robust and user-friendly software solutions.",
@@ -24,7 +24,7 @@ const experiences = [
       title: "Internship Trainee",
       company: "Euphoria GenX",
       type: "Apprenticeship",
-      duration: "Aug 2024 - Sep 2024 · 2 mos",
+      duration: "Aug 2024 - Sep 2024",
       location: "Kolkata, West Bengal, India · On-site",
       description: [
         "Worked with various web and backend technologies including MERN Stack, Firebase, SASS, JavaScript, RestAPIs, Generative AI, and more.",
@@ -44,7 +44,7 @@ const experiences = [
     {
       title: "Software Engineer",
       type: "Freelance",
-      duration: "May 2024 - Sep 2024 · 5 mos",
+      duration: "May 2024 - Sep 2024",
       location: "Kolkata, West Bengal, India · Hybrid",
       description: [
         "From requirements analysis to testing, developing industry-level software solutions and automation systems for the client, leveraging my skills in MERN stack, MySQL, Python, and Raspberry Pi.",
