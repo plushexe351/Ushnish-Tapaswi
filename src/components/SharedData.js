@@ -5,7 +5,7 @@ import euphoria from "../assets/euphoria-cert.jpeg";
 
 const certificates = [
   {
-    title: "MERN Stack Development | Industrial Training",
+    title: "Industrial Training in MERN Stack Development",
     logo: euphoria,
     issuedBy: "Euphoria GenX",
     issuedOn: "Sep 2024",
@@ -29,6 +29,15 @@ const certificates = [
     pinned: true,
     credential:
       "https://courses.edx.org/certificates/0b643e2b10844cd7b90c91f938df6c3a",
+  },
+  {
+    title:
+      "edX Verified Certificate for Using Python for Research",
+    logo: edx,
+    issuedBy: "edX",
+    issuedOn: "Mar 2024",
+    credential:
+      "https://courses.edx.org/certificates/61c92a80a7f84083817cd91437e03b2a",
   },
   {
     title: "Responsive Web Design",
