@@ -17,6 +17,7 @@ const ContactForm = () => {
   };
 
   const [formData, setFormData] = useState(initialFormData);
+  const [loading, setLoading] = useState(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -24,8 +25,8 @@ const ContactForm = () => {
   };
 
   const handleSubmit = (e) => {
+    setLoading(true);
     e.preventDefault();
-
     // Set defaults for missing fields
     const data = {
       ...formData,
@@ -44,7 +45,10 @@ const ContactForm = () => {
       })
       .catch((error) => {
         console.log("FAILED TO SEND MAIL...", error);
-        toast.success("Failed to send message");
+        toast.error("Failed to send message");
+      })
+      .finally(() => {
+        setLoading(false);
       });
   };
 
@@ -95,9 +99,19 @@ const ContactForm = () => {
           placeholder="Write me a message"
         ></textarea>
       </fieldset>
-      <button type="submit" id="submit">
-        <Send className="icon" />
-        Send
+      <button
+        type="submit"
+        id="submit"
+        disabled={loading}
+        aria-disabled={loading}
+      >
+        {loading ? (
+          "Loading..."
+        ) : (
+          <>
+            <Send className="icon" /> Send
+          </>
+        )}
       </button>
     </form>
   );
