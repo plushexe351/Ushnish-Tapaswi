@@ -35,7 +35,7 @@ const ProfileCard = () => {
   return (
     <div className="profileCard">
       <div className="hero">
-        <LazyImage src={profileImage} alt="" id="profile-image" />
+        <img src={profileImage} alt="" id="profile-image" />
         <div className="title">
           <h2 id="name">
             Ushnish Tapaswi <span className="wordbreak"></span>
