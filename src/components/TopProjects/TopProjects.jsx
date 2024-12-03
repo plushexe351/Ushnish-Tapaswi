@@ -9,6 +9,7 @@ import pos from "../../assets/pos.png";
 import "./TopProjects.scss";
 import { Code, Globe } from "react-feather";
 import LazyImage from "../LazyImage";
+import etchasketch from "../../assets/etchasketch.png";
 
 const TopProjects = ({ filter }) => {
   const projects = [
@@ -28,7 +29,7 @@ const TopProjects = ({ filter }) => {
       thumbnail: gcc,
       pinned: true,
       livePreviewURL: "",
-      sourceURL: "",
+      sourceURL: "https://github.com/plushexe351/github-contribution-calendar",
     },
     {
       name: "Euphoria ChatBot",
@@ -36,18 +37,10 @@ const TopProjects = ({ filter }) => {
       techStack: ["HTML", "CSS", "Google Gemini", "Node.js", "Express.js"],
       thumbnail: euphoria,
       pinned: false,
-      livePreviewURL: "",
-      sourceURL: "",
+      livePreviewURL: "https://euphoria-chatbot.onrender.com/",
+      sourceURL: "https://github.com/plushexe351/Euphoria-ChatBot",
     },
-    {
-      name: "iPod Simulator",
-      description: "An iPod Simulator made using Vanilla Js",
-      techStack: ["HTML", "CSS", "Vanilla Js"],
-      thumbnail: iPodSimulator,
-      pinned: false,
-      livePreviewURL: "",
-      sourceURL: "",
-    },
+
     {
       name: "Noteme.md",
       description: "Markdown Notebook with AI Writing Tools",
@@ -74,15 +67,32 @@ const TopProjects = ({ filter }) => {
       livePreviewURL: "",
       sourceURL: "",
     },
-
+    {
+      name: "iPod Simulator",
+      description: "An iPod Simulator made using Vanilla Js",
+      techStack: ["HTML", "CSS", "Vanilla JavaScript"],
+      thumbnail: iPodSimulator,
+      pinned: false,
+      livePreviewURL: "https://plushexe351.github.io/iPodSimulator/",
+      sourceURL: "https://github.com/plushexe351/iPodSimulator",
+    },
     {
       name: "Flappy Bird",
       description: "A Simple Flappy Bird game made using HTML Canvas",
       techStack: ["HTML", "CSS", "HTML 5 Canvas"],
+      thumbnail: etchasketch,
+      pinned: false,
+      livePreviewURL: "https://plushexe351.github.io/FlappyBird/",
+      sourceURL: "https://github.com/plushexe351/FlappyBird",
+    },
+    {
+      name: "Etch a Sketch",
+      description: "A Pixel Art Making Website",
+      techStack: ["HTML", "CSS", "Vanilla JavaScript"],
       thumbnail: flappyBird,
       pinned: false,
-      livePreviewURL: "",
-      sourceURL: "",
+      livePreviewURL: "https://plushexe351.github.io/Etch-a-Sketch/",
+      sourceURL: "https://github.com/plushexe351/Etch-a-Sketch",
     },
   ];
 
