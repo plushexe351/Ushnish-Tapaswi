@@ -77,22 +77,22 @@ const TopProjects = ({ filter }) => {
       sourceURL: "https://github.com/plushexe351/iPodSimulator",
     },
     {
-      name: "Flappy Bird",
-      description: "A Simple Flappy Bird game made using HTML Canvas",
-      techStack: ["HTML", "CSS", "HTML 5 Canvas"],
-      thumbnail: etchasketch,
-      pinned: false,
-      livePreviewURL: "https://plushexe351.github.io/FlappyBird/",
-      sourceURL: "https://github.com/plushexe351/FlappyBird",
-    },
-    {
       name: "Etch a Sketch",
       description: "A Pixel Art Making Website",
       techStack: ["HTML", "CSS", "Vanilla JavaScript"],
-      thumbnail: flappyBird,
+      thumbnail: etchasketch,
       pinned: false,
       livePreviewURL: "https://plushexe351.github.io/Etch-a-Sketch/",
       sourceURL: "https://github.com/plushexe351/Etch-a-Sketch",
+    },
+    {
+      name: "Flappy Bird",
+      description: "A Simple Flappy Bird game made using HTML Canvas",
+      techStack: ["HTML", "CSS", "HTML 5 Canvas"],
+      thumbnail: flappyBird,
+      pinned: false,
+      livePreviewURL: "https://plushexe351.github.io/FlappyBird/",
+      sourceURL: "https://github.com/plushexe351/FlappyBird",
     },
   ];
 
