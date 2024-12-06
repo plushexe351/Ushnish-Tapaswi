@@ -3,6 +3,7 @@ import "../tab.scss";
 import { experiences } from "./experiences";
 import euphoria from "../../assets/euphoria-cert.jpeg";
 import "./AboutMe.scss";
+import placeholderImg from "../../assets/placeholder.png";
 
 const AboutMe = () => {
   const [view, setView] = useState("About me");
@@ -25,7 +26,7 @@ const AboutMe = () => {
         <div className="experiences">
           {experiences.map((experience, index) => (
             <div className="experience" key={index}>
-              <img src={euphoria} alt="" />
+              <img src={experience.companyLogo || placeholderImg} alt="" />
               <div className="experience-details">
                 <h3 className="experience-title">{experience.title}</h3>
                 <div className="experience-company">

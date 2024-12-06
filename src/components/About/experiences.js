@@ -1,6 +1,10 @@
+import euphoria from "../../assets/euphoria-cert.jpeg";
+import nshm from "../../assets/nshm-logo.png";
+
 const experiences = [
     {
       title: "Software Development Intern",
+      companyLogo : nshm,
       company: "NSHM Knowledge Campus, Kolkata",
       type: "Internship",
       duration: "Jul 2024 - Present",
@@ -22,6 +26,7 @@ const experiences = [
     },
     {
       title: "Internship Trainee",
+      companyLogo : euphoria,
       company: "Euphoria GenX",
       type: "Apprenticeship",
       duration: "Aug 2024 - Sep 2024",
