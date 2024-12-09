@@ -10,7 +10,7 @@ const token = import.meta.env.VITE_API_GITHUB_ACCESS_TOKEN;
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronRight } from "react-feather";
 import { Link } from "react-router-dom";
-import Project from "./project/Project";
+import Project from "./Project/Project";
 const pageContent = {
   overview: (
     <>
