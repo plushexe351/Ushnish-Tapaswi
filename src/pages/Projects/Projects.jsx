@@ -1,7 +1,7 @@
 import React from "react";
 import "./Projects.scss";
 import { AnimatePresence, motion } from "framer-motion";
-import AnimatedPageWrapper from "../AnimatedPageWrapper";
+import AnimatedPageWrapper from "../PageWrapper";
 import Side from "../../components/Side";
 import Main from "../../components/Main";
 import ScrollToTop from "../../ScrollToTop";

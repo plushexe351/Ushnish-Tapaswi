@@ -1,14 +1,13 @@
 import React from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import AnimatedPageWrapper from "../AnimatedPageWrapper";
-import Side from "../../components/Side";
+import PageWrapper from "../PageWrapper";
 import Main from "../../components/Main";
 
 const Blog = () => {
   return (
-    <AnimatedPageWrapper pageName="blog">
+    <PageWrapper pageName="blog">
       <Main pageName="blog" />
-    </AnimatedPageWrapper>
+    </PageWrapper>
   );
 };
 

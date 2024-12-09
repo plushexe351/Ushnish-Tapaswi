@@ -3,11 +3,11 @@
   border-radius: 0.4rem;
   overflow: auto;
   .menubar {
+    background-color: rgba(190, 130, 230, 0.1);
     display: flex;
     padding: 0.5rem;
     align-items: center;
     border-bottom: 1px solid rgba(128, 128, 128, 0.459);
-    background-color: rgba(190, 130, 230, 0.1);
     .navbar {
       border: 1px solid rgba(128, 128, 128, 0.259);
       border-radius: 0.4rem;
@@ -29,7 +29,12 @@
   .aboutMe,
   .experience {
     padding: 1.5rem;
-
+    .description {
+      margin-top: 1rem;
+    }
+    .description {
+      font-size: 1rem;
+    }
     .social-badges {
       margin-block: 1rem;
       display: flex;
@@ -47,7 +52,7 @@
       line-height: 1.5;
     }
     .techstack {
-      margin-bottom: 1rem;
+      margin-block: 1rem;
       display: flex;
       flex-wrap: wrap;
       gap: 0.2rem;

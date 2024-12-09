@@ -3,15 +3,15 @@ import Side from "../../components/Side";
 import Main from "../../components/Main";
 import "./Overview.scss";
 import { AnimatePresence, motion } from "framer-motion";
-import AnimatedPageWrapper from "../AnimatedPageWrapper";
+import PageWrapper from "../PageWrapper";
 import ScrollToTop from "../../ScrollToTop";
 
 const Overview = () => {
   return (
-    <AnimatedPageWrapper pageName="overview">
+    <PageWrapper pageName="overview">
       <Side />
       <Main pageName="overview" />
-    </AnimatedPageWrapper>
+    </PageWrapper>
   );
 };
 

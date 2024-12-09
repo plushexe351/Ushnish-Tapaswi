@@ -17,8 +17,10 @@
     background-color: rgb(34, 22, 42);
     max-height: 100%;
     max-width: 100%;
-    height: 400px;
-    width: 500px;
+    min-width: 300px;
+    height: max-content;
+    width: max-content;
+    // width: 500px;
     padding: 0.6rem;
     border-radius: 1rem;
     display: flex;
@@ -48,10 +50,14 @@
     }
   }
 }
+.project-container {
+  height: 600px;
+  width: 800px;
+}
 
 .certifications-container {
-  height: 100%;
-  width: 100%;
+  height: 400px;
+  width: 500px;
   .certificate {
     display: flex;
     align-items: center;

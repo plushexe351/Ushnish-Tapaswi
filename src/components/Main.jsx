@@ -8,11 +8,18 @@ import { h1 } from "framer-motion/client";
 import WIP from "./WIP/WIP";
 const token = import.meta.env.VITE_API_GITHUB_ACCESS_TOKEN;
 import { motion, AnimatePresence } from "framer-motion";
+import { ChevronRight } from "react-feather";
+import { Link } from "react-router-dom";
+import Project from "./project/Project";
 const pageContent = {
   overview: (
     <>
       <AboutMe />
+      <TopProjects filter="work" />
       <TopProjects filter="pinned" />
+      <Link className="see-more" to="/projects">
+        See More <ChevronRight className="icon" />
+      </Link>
       <GitHubCalendar
         username="plushexe351"
         token={token}
@@ -25,7 +32,17 @@ const pageContent = {
       />
     </>
   ),
-  projects: <TopProjects filter="all" />,
+  projects: (
+    <>
+      <TopProjects filter="work" />
+      <TopProjects filter="all" />
+    </>
+  ),
+  "project-details": (
+    <>
+      <Project />
+    </>
+  ),
   contact: <ContactTab />,
   blog: <WIP />,
 };

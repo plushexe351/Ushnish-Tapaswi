@@ -36,6 +36,7 @@ $smallDevice: 480px;
     display: flex;
     gap: 0.5rem;
     .nav-item {
+      min-width: max-content;
       border-radius: 0.5rem;
       padding: 0.5rem;
       display: flex;
