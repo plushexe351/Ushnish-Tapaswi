@@ -64,8 +64,8 @@ $smallestDevice: 320px;
       height: 100px;
     }
     @include smallDevice {
-      width: 45px;
-      height: 45px;
+      width: 70px;
+      height: 70px;
     }
   }
   #name {
@@ -77,14 +77,19 @@ $smallestDevice: 320px;
     span {
       color: gray;
       font-weight: normal;
+      font-size: 1.4rem;
     }
     @include smallDevice {
-      font-size: 1rem;
+      font-size: 1.3rem;
+      span {
+        font-size: 1rem;
+      }
     }
   }
   #location {
     display: flex;
     // justify-content: center;
+    margin-top: 0.5rem;
     align-items: center;
     gap: 0.2rem;
     color: gray;
@@ -113,7 +118,7 @@ $smallestDevice: 320px;
       border: 1px solid rgba(128, 128, 128, 0.259);
       cursor: pointer;
       &:nth-child(2) {
-        background-color: #8e5bb7;
+        background-color: #9b29f8;
       }
     }
   }

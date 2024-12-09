@@ -38,11 +38,11 @@ const ProfileCard = () => {
         <img src={profileImage} alt="" id="profile-image" />
         <div className="title">
           <h2 id="name">
-            Ushnish Tapaswi <span className="wordbreak"></span>
-            <span className="pronouns">he/him</span>
+            Ushnish Tapaswi
+            {/* <span className="pronouns">he / him</span> */}
           </h2>
           <p id="location">
-            <MapPin className="icon" /> <span>India</span>
+            <MapPin className="icon" /> <span>WB, India</span>
           </p>
         </div>
       </div>
