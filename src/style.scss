@@ -125,9 +125,6 @@ main {
   display: flex;
   justify-content: center;
   padding: 6rem 1rem 2rem 1rem;
-  @include smallDevice {
-    padding: 2rem 1rem 1rem 1rem;
-  }
 }
 
 .see-more {
