@@ -29,6 +29,7 @@ const pageContent = {
         titleColor="white"
         fontSize="12"
         labelColor="white"
+        year={2024}
       />
     </>
   ),
