@@ -21,7 +21,7 @@ $smallDevice: 480px;
     background-color: #110b16b7;
     backdrop-filter: blur(1rem);
     -webkit-backdrop-filter: blur(1rem);
-    box-shadow: 0 0 2rem #000000;
+    // box-shadow: 0 0 2rem #000000;
     border: 1px solid rgba(128, 128, 128, 0.459);
     border-radius: 1rem;
     max-width: 100%;
@@ -44,10 +44,10 @@ $smallDevice: 480px;
       text-decoration: none;
       transition: 0.1s ease;
       &:hover {
-        background-color: rgba(33, 40, 48, 0.441);
+        background-color: #f8d1d111;
       }
       &.active {
-        background-color: rgba(190, 130, 230, 0.2);
+        background-color: #30203b;
       }
     }
   }
