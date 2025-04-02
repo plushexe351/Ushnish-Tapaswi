@@ -9,12 +9,21 @@ import {
   CornerUpRight,
   ExternalLink,
   GitHub,
+  List,
   Share,
 } from "react-feather";
 import { getProject } from "../SharedData";
 import { useNavigate, useParams } from "react-router-dom";
 import { li } from "framer-motion/client";
 import { GitHubCalendar } from "github-contribution-calendar";
+import {
+  Donut,
+  Dot,
+  DotIcon,
+  DotSquare,
+  ListIcon,
+  LucideList,
+} from "lucide-react";
 const token = import.meta.env.VITE_API_GITHUB_ACCESS_TOKEN;
 
 const Project = () => {
@@ -129,11 +138,11 @@ const Project = () => {
           )}
           {project.keyFeatures && (
             <>
-              <p className="project-details--title">✰ Key Features</p>
+              <p className="project-details--title">Key Features</p>
               <ul className="project-key-features">
                 {project.keyFeatures?.map((feature, index) => (
                   <li key={index}>
-                    <ArrowRight className="icon" />
+                    <div className="dot"></div>
                     {feature}
                   </li>
                 ))}
