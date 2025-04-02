@@ -1,19 +1,8 @@
 import React, { useContext, useEffect, useState } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 import "./TopBar.scss";
-import {
-  BookOpen,
-  Grid,
-  MessageSquare,
-  Edit,
-  BarChart,
-  Menu,
-  MoreHorizontal,
-  MoreVertical,
-} from "react-feather";
+import { BookOpen, Grid, MessageSquare, MoreVertical } from "react-feather";
 import { Context } from "../../context/context";
-import { EyeClosed, EyeClosedIcon, Option, X } from "lucide-react";
-import { Bar } from "recharts";
 
 const TopBar = () => {
   const Navigate = useNavigate();
