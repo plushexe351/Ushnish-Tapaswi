@@ -185,6 +185,7 @@ $smallestDevice: 320px;
     .project-about,
     .project-key-features {
       .dot {
+        flex-shrink: 0;
         width: 7px;
         height: 7px;
         border-radius: 50%;
