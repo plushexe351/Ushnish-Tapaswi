@@ -13,10 +13,10 @@
     border: 1px solid rgba(128, 128, 128, 0.159);
     color: white;
     border-radius: 1rem;
-    background-color: #26262a;
+    background-color: var(--pill-color);
     padding: 0.7rem 1rem;
     &:focus {
-      outline: 1px solid #e91e63;
+      outline: 1px solid var(--accent-color);
     }
   }
   fieldset {
@@ -41,7 +41,7 @@
     padding: 0.7rem 2rem;
     font-size: 0.8rem;
     border-radius: 1rem;
-    background-color: #e91e63;
+    background-color: var(--accent-color);
     color: white;
     cursor: pointer;
     .icon {
