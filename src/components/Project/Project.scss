@@ -32,7 +32,8 @@ $smallestDevice: 320px;
     align-items: center;
     gap: 0.5rem;
     cursor: pointer;
-    opacity: 0.5;
+    // opacity: 0.9;
+    color: lightgray;
     &:hover {
       text-decoration: underline;
     }
