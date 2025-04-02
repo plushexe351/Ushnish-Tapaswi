@@ -5,6 +5,11 @@ $smallDevice: 480px;
     @content;
   }
 }
+@mixin mediumDevice {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
 
 .topbar {
   position: fixed;
@@ -16,7 +21,11 @@ $smallDevice: 480px;
   justify-content: center;
   align-items: center;
   padding-inline: 1rem;
-  padding-top: 1rem;
+  padding-top: 1.5rem;
+  transition: 0.2s ease;
+  &.hidden {
+    transform: translateY(-100%);
+  }
   .name {
     display: flex;
     justify-content: center;
@@ -25,21 +34,20 @@ $smallDevice: 480px;
     padding-inline: 1rem 4rem;
     font-size: 1rem;
     margin-right: auto;
+    cursor: pointer;
     .circle {
       width: 20px;
       height: 20px;
       border-radius: 50%;
-      background-color: crimson;
+      background-color: #e91e63;
     }
   }
 
   nav {
-    // background-color: #110b16b7;
+    position: relative;
     background-color: #141417;
     backdrop-filter: blur(1rem);
     -webkit-backdrop-filter: blur(1rem);
-    // box-shadow: 0 0 2rem #000000;
-    // border: 1px solid rgba(128, 128, 128, 0.459);
     border-radius: 2rem;
     width: 1245px;
     max-width: 100%;
@@ -47,10 +55,44 @@ $smallDevice: 480px;
     display: flex;
     justify-content: start;
     align-items: center;
-    padding: 0.5rem;
+    padding: 1rem;
     display: flex;
-    border: 1px solid rgba(128, 128, 128, 0.159);
+    // border: 1px solid rgba(128, 128, 128, 0.159);
+    box-shadow: 0 0 3rem black;
+
     gap: 0.5rem;
+
+    @include smallDevice {
+      overflow: unset;
+    }
+
+    .navLinks {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      @include smallDevice {
+        display: none;
+        &.mobile {
+          padding: 1rem;
+          background-color: #141414;
+          border-radius: 2rem;
+          position: absolute;
+          top: calc(100% + 1rem);
+          right: 0;
+          display: flex;
+          align-items: start;
+          flex-direction: column;
+        }
+      }
+    }
+
+    > .menu.icon {
+      display: none;
+      @include smallDevice {
+        display: block;
+      }
+    }
+
     .nav-item {
       min-width: max-content;
       border-radius: 1.5rem;
@@ -63,7 +105,9 @@ $smallDevice: 480px;
       text-decoration: none;
       color: gray;
       transition: 0.1s ease;
-
+      // @include mediumDevice {
+      //   display: none;
+      // }
       &.active {
         color: white;
       }

@@ -53,9 +53,11 @@ const AboutMe = () => {
       )}
       {view === "About me" && (
         <div className="aboutMe">
-          <h1 id="greet">Hi 👋 I am Ushnish Tapaswi</h1>
+          <h1 id="greet">
+            Hi 👋 I am <strong>Ushnish Tapaswi</strong>
+          </h1>
           {/* <div className="styled-break"></div> */}
-          <div className="social-badges">
+          {/* <div className="social-badges">
             <a href="https://www.linkedin.com/in/ushnish-tapaswi-719489267/">
               <img
                 src="https://img.shields.io/badge/linkedin-informational?style=flat&logo=linkedin&color=0A66C2"
@@ -69,18 +71,17 @@ const AboutMe = () => {
                 alt="link to my website"
               />
             </a>
-          </div>
+          </div> */}
           <div className="description">
             <p>
-              I’m a <em>Web Developer</em> specializing in the MERN stack. My
-              focus is on user-centric design and building reliable backend
+              I focus on user-centric design and building reliable backend
               systems that work seamlessly together.
             </p>
           </div>
-          <blockquote>
+          {/* <blockquote>
             Engineer of online experiences. Crafting invisible threads that
             connect users with technology.
-          </blockquote>
+          </blockquote> */}
           <div className="techstack">
             <img
               src="https://img.shields.io/badge/Code-JavaScript-informational?style=flat&logo=javascript&color=333333&labelColor=333333"

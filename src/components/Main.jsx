@@ -11,6 +11,13 @@ import { motion, AnimatePresence } from "framer-motion";
 import { ChevronRight } from "react-feather";
 import { Link } from "react-router-dom";
 import Project from "./Project/Project";
+const my_theme = {
+  noContributions: "#e91e6320",
+  low: "#C2185B",
+  moderate: "#E91E63",
+  high: "#F06292",
+  veryHigh: "#F8BBD0",
+};
 const pageContent = {
   overview: (
     <>
@@ -23,7 +30,7 @@ const pageContent = {
       <GitHubCalendar
         username="plushexe351"
         token={token}
-        theme="crimson"
+        theme="custom"
         background="transparent"
         cellSize="10"
         titleColor="white"
@@ -31,6 +38,7 @@ const pageContent = {
         labelColor="white"
         border=""
         year={2024}
+        customTheme={my_theme}
       />
     </>
   ),

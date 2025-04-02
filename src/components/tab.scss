@@ -1,5 +1,5 @@
 .tab {
-  border: 1px solid rgba(128, 128, 128, 0.159);
+  // border: 1px solid rgba(128, 128, 128, 0.159);
   border-radius: 2rem;
   overflow: auto;
   font-family: cursive;
@@ -7,11 +7,11 @@
   .menubar {
     // background-color: #1e1e23;
     display: flex;
-    padding: 1rem;
+    padding: 1.5rem;
     align-items: center;
     .navbar {
       width: 100%;
-      border: 1px solid rgba(128, 128, 128, 0.159);
+      // border: 1px solid rgba(128, 128, 128, 0.159);
       border-radius: 1rem;
       display: flex;
       justify-content: center;
@@ -22,7 +22,7 @@
       text-align: center;
       flex: 1;
       border-radius: 1rem;
-      padding: 0.7rem 1rem;
+      padding: 1rem;
       cursor: pointer;
       &.active {
         // outline: 1px solid rgba(128, 128, 128, 0.659);
@@ -32,12 +32,13 @@
   }
   .aboutMe,
   .experience {
-    padding: 1.5rem;
+    padding: 0 1.5rem 1.5rem 1.5rem;
     .description {
       margin-top: 1rem;
     }
     .description {
-      font-size: 1rem;
+      font-size: 1.1rem;
+      color: gray;
     }
     .social-badges {
       margin-block: 1rem;

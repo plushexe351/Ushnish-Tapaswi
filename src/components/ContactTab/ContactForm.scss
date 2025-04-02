@@ -16,7 +16,7 @@
     background-color: #26262a;
     padding: 0.7rem 1rem;
     &:focus {
-      outline: 1px solid crimson;
+      outline: 1px solid #e91e63;
     }
   }
   fieldset {
@@ -41,9 +41,11 @@
     padding: 0.7rem 2rem;
     font-size: 0.8rem;
     border-radius: 1rem;
-    background-color: crimson;
+    background-color: #e91e63;
     color: white;
     cursor: pointer;
-    border: 1px solid rgba(128, 128, 128, 0.459);
+    .icon {
+      stroke: white;
+    }
   }
 }

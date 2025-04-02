@@ -26,11 +26,10 @@ $smallDevice: 480px;
       border-radius: 2rem;
       background-color: #141417;
       padding: 1rem;
-      border: 1px solid rgba(128, 128, 128, 0.159);
+      // border: 1px solid rgba(128, 128, 128, 0.159);
       overflow: auto;
       img {
         margin-block: 1rem;
-        outline: 1px solid rgba(128, 128, 128, 0.159);
         border-radius: 1rem;
         width: 100%;
         object-fit: cover;
@@ -40,14 +39,12 @@ $smallDevice: 480px;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        // padding-block: 0.5rem;
         text-align: center;
         color: rgb(164, 164, 164);
         background-color: #141417;
         font-size: 0.9rem;
         font-weight: 600;
         font-style: italic;
-        // border-bottom: 1px solid rgba(128, 128, 128, 0.259);
       }
       .project--links {
         font-size: 0.8rem;

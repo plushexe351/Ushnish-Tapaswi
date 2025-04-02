@@ -113,7 +113,7 @@ $smallestDevice: 320px;
     display: flex;
     gap: 1rem;
     border-radius: 2rem;
-    border: 1px solid rgba(128, 128, 128, 0.159);
+    // border: 1px solid rgba(128, 128, 128, 0.159);
     background-color: #141417;
     align-items: center;
     overflow: auto;
@@ -126,7 +126,7 @@ $smallestDevice: 320px;
     img {
       height: 100%;
       width: 100%;
-      border: 1px solid rgba(128, 128, 128, 0.159);
+      // border: 1px solid rgba(128, 128, 128, 0.159);
       border-radius: 1rem;
       object-fit: cover;
     }
