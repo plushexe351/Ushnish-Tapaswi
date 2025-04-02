@@ -12,6 +12,11 @@ $smallerDevice: 600px;
 $smallDevice: 480px;
 $smallestDevice: 320px;
 
+:root {
+  --bg-color: black;
+  --primary-color: #141417;
+}
+
 // Mixin for medium devices
 @mixin mediumDevice {
   @media (max-width: $mediumDevice) {
