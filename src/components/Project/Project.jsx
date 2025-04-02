@@ -56,7 +56,6 @@ const Project = () => {
           )}
         </div>
       </div>
-      <hr className="styled-break" />
       <div className="project-overview">
         <div className="project-thumbnail">
           <img src={project.thumbnail} alt={project.name + "-thumbnail"} />
@@ -69,11 +68,9 @@ const Project = () => {
           <div className="project-type">
             <div className="overview-title">Project Type</div>
             {project.work && (
-              <div className="overview-content">Client Project</div>
+              <div className="overview-content">Professional</div>
             )}
-            {!project.work && (
-              <div className="overview-content">Personal Project</div>
-            )}
+            {!project.work && <div className="overview-content">Personal</div>}
           </div>
           <div className="project-tech-stack">
             <div className="overview-title">Tech Stack</div>
@@ -118,6 +115,7 @@ const Project = () => {
           cellSize="11"
           titleColor="white"
           fontSize="12"
+          year="2024"
           // labelColor="white"
         />
       )}
@@ -126,14 +124,12 @@ const Project = () => {
           {project.about && (
             <>
               <p className="project-details--title">About</p>
-              <hr className="styled-break" />
               <div className="project-about">{project.about}</div>
             </>
           )}
           {project.keyFeatures && (
             <>
               <p className="project-details--title">✰ Key Features</p>
-              <hr className="styled-break" />
               <ul className="project-key-features">
                 {project.keyFeatures?.map((feature, index) => (
                   <li key={index}>

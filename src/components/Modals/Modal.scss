@@ -14,14 +14,14 @@
   .modal-container {
     overscroll-behavior: contain;
     border: 1px solid rgba(128, 128, 128, 0.259);
-    background-color: rgb(34, 22, 42);
+    background-color: #141414;
     max-height: 100%;
     max-width: 100%;
     // min-width: 300px;
     height: max-content;
     width: 500px;
-    padding: 0.6rem;
-    border-radius: 1rem;
+    padding: 1rem;
+    border-radius: 2rem;
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
@@ -38,7 +38,7 @@
     .close {
       width: 5px;
       height: 5px;
-      background-color: #8e5bb7;
+      background-color: crimson;
       border-radius: 50%;
       padding: 0.5rem;
       position: absolute;

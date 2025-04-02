@@ -55,7 +55,7 @@ const ContactForm = () => {
   return (
     <form className="contactForm" onSubmit={handleSubmit}>
       <fieldset id="nameField">
-        <label htmlFor="name">Name</label>
+        {/* <label htmlFor="name">Name</label> */}
         <input
           type="text"
           name="from_name"
@@ -66,7 +66,7 @@ const ContactForm = () => {
         />
       </fieldset>
       <fieldset id="emailField">
-        <label htmlFor="email">Email</label>
+        {/* <label htmlFor="email">Email</label> */}
         <input
           type="email"
           name="from_email"
@@ -78,7 +78,7 @@ const ContactForm = () => {
         />
       </fieldset>
       <fieldset id="subjectField">
-        <label htmlFor="subject">Subject</label>
+        {/* <label htmlFor="subject">Subject</label> */}
         <input
           type="text"
           name="subject"
@@ -89,7 +89,7 @@ const ContactForm = () => {
         />
       </fieldset>
       <fieldset id="messageBox">
-        <label htmlFor="message">Message</label>
+        {/* <label htmlFor="message">Message</label> */}
         <textarea
           name="message"
           id="message"
@@ -109,7 +109,7 @@ const ContactForm = () => {
           "Loading..."
         ) : (
           <>
-            <Send className="icon" /> Send
+            Send <Send className="icon" size={15} />
           </>
         )}
       </button>

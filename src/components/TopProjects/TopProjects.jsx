@@ -74,9 +74,9 @@ const TopProjects = ({ filter }) => {
     <>
       <div className="topProjects">
         <p className="projects--title">
-          {filter === "pinned" && "Top Personal Projects"}
+          {filter === "pinned" && "📌 Top Personal Projects"}
           {filter === "all" && "Personal Work"}
-          {filter === "work" && "Work Experience Highlights"}
+          {filter === "work" && "👨🏻‍💻 Work Experience Highlights"}
         </p>
         <div className="projects-container">
           {filteredProjects.map((project, index) => (

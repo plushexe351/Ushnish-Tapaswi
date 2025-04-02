@@ -23,12 +23,13 @@ const pageContent = {
       <GitHubCalendar
         username="plushexe351"
         token={token}
-        theme="galaxy"
+        theme="crimson"
         background="transparent"
         cellSize="10"
         titleColor="white"
         fontSize="12"
         labelColor="white"
+        border=""
         year={2024}
       />
     </>

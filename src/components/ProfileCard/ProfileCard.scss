@@ -108,19 +108,19 @@ $smallestDevice: 320px;
     align-items: center;
     gap: 0.5rem;
     > * {
-      padding: 0.5rem 1rem;
+      padding: 0.7rem 1rem;
       font-size: 0.8rem;
       flex: 1;
       font-family: Roboto;
       text-align: center;
       text-decoration: none;
-      border-radius: 0.4rem;
-      background-color: rgb(48 32 59);
+      border-radius: 1rem;
+      background-color: #141417;
       color: white;
-      border: 1px solid rgba(128, 128, 128, 0.259);
+      border: 1px solid rgba(128, 128, 128, 0.159);
       cursor: pointer;
       &:nth-child(2) {
-        background-color: rgb(134 73 184);
+        background-color: crimson;
       }
     }
   }

@@ -44,6 +44,9 @@ const TopBar = () => {
   return (
     <header className="topbar">
       <nav>
+        <div className="name">
+          Ushnish <div className="circle"></div>
+        </div>
         {navLinks.map((link, index) => (
           <NavLink
             key={index}

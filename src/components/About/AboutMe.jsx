@@ -54,7 +54,7 @@ const AboutMe = () => {
       {view === "About me" && (
         <div className="aboutMe">
           <h1 id="greet">Hi 👋 I am Ushnish Tapaswi</h1>
-          <hr className="styled-break" />
+          {/* <div className="styled-break"></div> */}
           <div className="social-badges">
             <a href="https://www.linkedin.com/in/ushnish-tapaswi-719489267/">
               <img

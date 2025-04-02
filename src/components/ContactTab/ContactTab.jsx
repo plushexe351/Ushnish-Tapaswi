@@ -23,7 +23,6 @@ const ContactTab = () => {
       {view === "Message Me" && (
         <div className="aboutMe">
           <h1 id="greet">Send me a message 💬</h1>
-          <hr className="styled-break" />
           <ContactForm />
         </div>
       )}

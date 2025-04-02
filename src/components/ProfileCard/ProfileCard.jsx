@@ -61,7 +61,6 @@ const ProfileCard = () => {
           </a>
         ))}
       </div>
-      <hr className="styled-break" />
       <div className="certifications" onClick={() => setModalOpen(true)}>
         <p className="certifications--title">
           Certifications <ChevronRight className="icon" />

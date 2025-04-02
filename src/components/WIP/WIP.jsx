@@ -2,7 +2,11 @@ import React from "react";
 import "./WIP.scss";
 
 const WIP = () => {
-  return <div className="WIP">Coming soon</div>;
+  return (
+    <div className="WIP">
+      <span>🔨</span>Coming soon
+    </div>
+  );
 };
 
 export default WIP;
