@@ -4,7 +4,7 @@ import ContactForm from "./ContactForm";
 
 const ContactTab = () => {
   const [view, setView] = useState("Message Me");
-  const navItems = ["Message Me", "Socials"];
+  const navItems = ["Message Me"];
   return (
     <div className="tab">
       <nav className="menubar">
@@ -22,7 +22,10 @@ const ContactTab = () => {
       </nav>
       {view === "Message Me" && (
         <div className="message">
-          <h1 id="greet">Send me a message 💬</h1>
+          <h1 id="greet">Send me a message 💬 </h1>
+          <div className="description">
+            I Will get back to you within 48 hrs.
+          </div>
           <ContactForm />
         </div>
       )}
