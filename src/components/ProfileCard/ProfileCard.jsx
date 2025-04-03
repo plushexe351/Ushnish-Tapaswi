@@ -39,7 +39,7 @@ const ProfileCard = () => {
         <div className="title">
           <h2 id="name">
             Ushnish Tapaswi
-            {/* <span className="pronouns">he / him</span> */}
+            <span className="pronouns">he / him</span>
           </h2>
           <p id="location">
             <MapPin className="icon" /> <span>WB, India</span>

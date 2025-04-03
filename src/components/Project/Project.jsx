@@ -21,6 +21,7 @@ import {
   Dot,
   DotIcon,
   DotSquare,
+  Link,
   ListIcon,
   LucideList,
 } from "lucide-react";
@@ -97,7 +98,7 @@ const Project = () => {
                 target="_blank"
                 className="overview-content"
               >
-                {project.livePreviewURL}
+                <Link className="icon" /> {project.livePreviewURL}
               </a>
             </div>
           )}
@@ -109,7 +110,7 @@ const Project = () => {
                 target="_blank"
                 className="overview-content"
               >
-                {project.sourceURL}
+                <Link className="icon" /> {project.sourceURL}
               </a>
             </div>
           )}

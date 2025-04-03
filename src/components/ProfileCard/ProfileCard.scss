@@ -75,6 +75,11 @@ $smallestDevice: 320px;
     align-items: center;
     gap: 0.5rem;
 
+    .pronouns {
+      font-style: italic;
+      font-size: 1rem;
+    }
+
     span {
       color: gray;
       font-weight: normal;

@@ -74,8 +74,9 @@ const AboutMe = () => {
           </div> */}
           <div className="description">
             <p>
-              I focus on user-centric design and building reliable backend
-              systems that work seamlessly together.
+              As a full-stack web developer and student, I specialize in
+              user-centric design and building robust backend systems that work
+              well together.
             </p>
           </div>
           {/* <blockquote>

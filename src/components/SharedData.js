@@ -128,8 +128,8 @@ const projects = [
     ],
     thumbnail: noteme,
     work: true,
-    livePreviewURL: "",
-    sourceURL: "",
+    livePreviewURL: "https://noteme-md.vercel.app",
+    sourceURL: "https://github.com/plushexe351/noteme.md",
     about: `Noteme is an AI-powered note-taking app with markdown editing and real-time saving. It offers easy Google authentication, automatic note title recognition, and efficient note organization with search functionality. With responsive design and AI writing tools, creating and managing content, including code, is simpler than ever.
 `,
     keyFeatures: [

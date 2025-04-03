@@ -4,12 +4,12 @@ import ContactForm from "./ContactForm";
 
 const ContactTab = () => {
   const [view, setView] = useState("Message Me");
-  const navItems = ["Message Me"];
+  const navItems = ["Message Me", "Socials"];
   return (
     <div className="tab">
       <nav className="menubar">
         <div className="navbar">
-          {navItems.map((item, index) => (
+          {navItems?.map((item, index) => (
             <div
               key={index}
               className={`nav-item ${view === item ? "active" : ""}`}
@@ -21,9 +21,15 @@ const ContactTab = () => {
         </div>
       </nav>
       {view === "Message Me" && (
-        <div className="aboutMe">
+        <div className="message">
           <h1 id="greet">Send me a message 💬</h1>
           <ContactForm />
+        </div>
+      )}
+      {view === "Socials" && (
+        <div className="socials">
+          <h1 id="greet">Let's connect 🤝</h1>
+          {/* <ContactForm /> */}
         </div>
       )}
     </div>

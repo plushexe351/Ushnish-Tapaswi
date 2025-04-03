@@ -26,13 +26,16 @@
       cursor: pointer;
       &.active {
         // outline: 1px solid rgba(128, 128, 128, 0.659);
-        background-color: rgb(41, 41, 41);
+        background-color: #28282c;
       }
     }
   }
   .aboutMe,
-  .experience {
+  .experience,
+  .message,
+  .socials {
     padding: 0 1.5rem 1.5rem 1.5rem;
+    max-width: 700px;
     .description {
       margin-top: 1rem;
     }
