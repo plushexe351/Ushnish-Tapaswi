@@ -4,10 +4,57 @@ import { experiences } from "./experiences";
 import euphoria from "../../assets/euphoria-cert.jpeg";
 import "./AboutMe.scss";
 import placeholderImg from "../../assets/placeholder.png";
+import reactico from "../../assets/react.png";
+import nodeico from "../../assets/node.png";
+import expressico from "../../assets/express.png";
+import flaskico from "../../assets/flask.png";
+import mongodbico from "../../assets/mongodb.png";
+import mysqlico from "../../assets/mysql.png";
+import firebaseico from "../../assets/firebase.png";
+import sassico from "../../assets/sass.png";
+import tailwindico from "../../assets/tailwind.png";
 
 const AboutMe = () => {
   const [view, setView] = useState("About me");
   const navItems = ["About me", "Experience"];
+  const Technologies = [
+    {
+      title: "React",
+      icon: reactico,
+    },
+    {
+      title: "Node.js",
+      icon: nodeico,
+    },
+    {
+      title: "Express.js",
+      icon: expressico,
+    },
+    {
+      title: "Mongo DB",
+      icon: mongodbico,
+    },
+    {
+      title: "MySQL",
+      icon: mysqlico,
+    },
+    {
+      title: "Firebase",
+      icon: firebaseico,
+    },
+    {
+      title: "Tailwind",
+      icon: tailwindico,
+    },
+    {
+      title: "Sass",
+      icon: sassico,
+    },
+    {
+      title: "Flask",
+      icon: flaskico,
+    },
+  ];
   return (
     <div className="tab">
       <nav className="menubar">
@@ -53,8 +100,8 @@ const AboutMe = () => {
       )}
       {view === "About me" && (
         <div className="aboutMe">
-          <h1 id="greet">
-            Hi 👋 I am <strong>Ushnish Tapaswi</strong>
+          <h1 className="greet">
+            Hey 👋 I'm <strong>Ushnish Tapaswi</strong>
           </h1>
           {/* <div className="styled-break"></div> */}
           {/* <div className="social-badges">
@@ -84,14 +131,22 @@ const AboutMe = () => {
             connect users with technology.
           </blockquote> */}
           <div className="techstack">
-            {/* <img
+            {/* {Technologies.map((tech, index) => (
+              <div className="tech">
+                <div className="icon">
+                  <img src={tech.icon} alt="" />
+                </div>
+                {tech.title}
+              </div>
+            ))} */}
+            <img
               src="https://img.shields.io/badge/code-JavaScript-informational?style=flat&logo=javascript&color=333333&labelColor=333333"
               alt="language js"
             />
             <img
               src="https://img.shields.io/badge/code-Python-informational?style=flat&logo=python&color=333333&labelColor=333333"
               alt="language py"
-            /> */}
+            />
             <img
               src="https://img.shields.io/badge/frontend-react-informational?style=flat&logo=react&color=333333&labelColor=333333"
               alt="framework react"

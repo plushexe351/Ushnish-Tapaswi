@@ -10,7 +10,8 @@
   input,
   textarea {
     font-size: 0.9rem;
-    border: 1px solid rgba(128, 128, 128, 0.159);
+    // border: 1px solid rgba(128, 128, 128, 0.159);
+    border: none;
     color: white;
     border-radius: 1rem;
     background-color: var(--pill-color);

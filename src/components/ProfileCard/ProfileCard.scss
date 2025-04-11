@@ -50,6 +50,7 @@ $smallestDevice: 320px;
     }
   }
   #profile-image {
+    flex-shrink: 0;
     height: 300px;
     width: 300px;
     border-radius: 50%;
@@ -164,6 +165,7 @@ $smallestDevice: 320px;
         display: flex;
         align-items: center;
         img {
+          flex-shrink: 0;
           height: 40px;
           width: 40px;
           border-radius: 50%;

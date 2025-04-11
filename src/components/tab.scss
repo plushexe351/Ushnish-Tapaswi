@@ -9,6 +9,7 @@
     display: flex;
     padding: 1.5rem;
     align-items: center;
+    // display: none;
     .navbar {
       width: 100%;
       // border: 1px solid rgba(128, 128, 128, 0.159);
@@ -16,7 +17,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      background-color: #1e1e23;
+      gap: 1rem;
     }
     .nav-item {
       text-align: center;
@@ -24,9 +25,12 @@
       border-radius: 1rem;
       padding: 1rem;
       cursor: pointer;
+      color: gray;
+      background-color: #1e1e23;
       &.active {
         // outline: 1px solid rgba(128, 128, 128, 0.659);
-        background-color: #28282c;
+        background-color: #37373b;
+        color: white;
       }
     }
   }
@@ -34,8 +38,14 @@
   .experience,
   .message,
   .socials {
-    padding: 0 1.5rem 1.5rem 1.5rem;
+    padding: 0rem 1.5rem 1.5rem 1.5rem;
     max-width: 700px;
+    .greet {
+      font-weight: normal;
+      strong {
+        font-style: italic;
+      }
+    }
     .description {
       margin-top: 1rem;
     }
@@ -63,8 +73,40 @@
       margin-block: 1rem;
       display: flex;
       flex-wrap: wrap;
-      gap: 0.2rem;
+      gap: 0.5rem;
       align-items: center;
+      > * {
+        display: flex;
+        color: var(--secondary-text-color);
+        font-size: 0.8rem;
+        font-style: italic;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+        background-color: var(--bg-color);
+        border-radius: 2rem;
+
+        .icon {
+          width: 15px;
+          height: 15px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 50%;
+          flex-shrink: 0;
+          // background-color: var(--primary-text-color);
+        }
+        &:nth-of-type(3) img,
+        &:last-of-type img {
+          filter: contrast(0%);
+        }
+        img {
+          height: 15px;
+          width: 15px;
+          border-radius: 50%;
+          object-fit: contain;
+        }
+      }
     }
   }
   .message,
