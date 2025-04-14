@@ -17,44 +17,44 @@ import tailwindico from "../../assets/tailwind.png";
 const AboutMe = () => {
   const [view, setView] = useState("About me");
   const navItems = ["About me", "Experience"];
-  const Technologies = [
-    {
-      title: "React",
-      icon: reactico,
-    },
-    {
-      title: "Node.js",
-      icon: nodeico,
-    },
-    {
-      title: "Express.js",
-      icon: expressico,
-    },
-    {
-      title: "Mongo DB",
-      icon: mongodbico,
-    },
-    {
-      title: "MySQL",
-      icon: mysqlico,
-    },
-    {
-      title: "Firebase",
-      icon: firebaseico,
-    },
-    {
-      title: "Tailwind",
-      icon: tailwindico,
-    },
-    {
-      title: "Sass",
-      icon: sassico,
-    },
-    {
-      title: "Flask",
-      icon: flaskico,
-    },
-  ];
+  // const Technologies = [
+  //   {
+  //     title: "React",
+  //     icon: reactico,
+  //   },
+  //   {
+  //     title: "Node.js",
+  //     icon: nodeico,
+  //   },
+  //   {
+  //     title: "Express.js",
+  //     icon: expressico,
+  //   },
+  //   {
+  //     title: "Mongo DB",
+  //     icon: mongodbico,
+  //   },
+  //   {
+  //     title: "MySQL",
+  //     icon: mysqlico,
+  //   },
+  //   {
+  //     title: "Firebase",
+  //     icon: firebaseico,
+  //   },
+  //   {
+  //     title: "Tailwind",
+  //     icon: tailwindico,
+  //   },
+  //   {
+  //     title: "Sass",
+  //     icon: sassico,
+  //   },
+  //   {
+  //     title: "Flask",
+  //     icon: flaskico,
+  //   },
+  // ];
   return (
     <div className="tab">
       <nav className="menubar">
@@ -121,15 +121,14 @@ const AboutMe = () => {
           </div> */}
           <div className="description">
             <p>
-              As a full-stack web developer and student, I specialize in
-              user-centric design and building robust backend systems that work
-              well together.
+              I'm a full-stack web developer and student. I build user-centric
+              design and robust backend systems that work well together. In
+              other words, I'm an engineer of online experiences. I craft
+              invisible threads that connect users with technology. Here's what
+              I work with.
             </p>
           </div>
-          {/* <blockquote>
-            Engineer of online experiences. Crafting invisible threads that
-            connect users with technology.
-          </blockquote> */}
+
           <div className="techstack">
             {/* {Technologies.map((tech, index) => (
               <div className="tech">
@@ -140,51 +139,54 @@ const AboutMe = () => {
               </div>
             ))} */}
             <img
-              src="https://img.shields.io/badge/code-JavaScript-informational?style=flat&logo=javascript&color=333333&labelColor=333333"
+              src="https://img.shields.io/badge/JavaScript-informational?style=flat&logo=javascript&color=333333&labelColor=333333"
               alt="language js"
             />
             <img
-              src="https://img.shields.io/badge/code-Python-informational?style=flat&logo=python&color=333333&labelColor=333333"
+              src="https://img.shields.io/badge/Python-informational?style=flat&logo=python&color=333333&labelColor=333333"
               alt="language py"
             />
             <img
-              src="https://img.shields.io/badge/frontend-react-informational?style=flat&logo=react&color=333333&labelColor=333333"
+              src="https://img.shields.io/badge/react-informational?style=flat&logo=react&color=333333&labelColor=333333"
               alt="framework react"
             />
             <img
-              src="https://img.shields.io/badge/bundler-vite-informational?style=flat&logo=vite&color=333333&labelColor=333333"
-              alt="bundler react"
+              src="https://img.shields.io/badge/vite-informational?style=flat&logo=vite&color=333333&labelColor=333333"
+              alt="bundler vite"
             />
             <img
-              src="https://img.shields.io/badge/backend-express-informational?style=flat&logo=express&color=333333&labelColor=333333"
+              src="https://img.shields.io/badge/express.js-informational?style=flat&logo=express&color=333333&labelColor=333333"
               alt="backend express"
             />
+
             <img
-              src="https://img.shields.io/badge/backend-node-informational?style=flat&logo=node.js&color=333333&labelColor=333333"
+              src="https://img.shields.io/badge/node.js-informational?style=flat&logo=node.js&color=333333&labelColor=333333"
               alt="backend node"
             />
             <img
-              src="https://img.shields.io/badge/backend-flask-informational?style=flat&logo=flask&color=333333&labelColor=333333"
+              src="https://img.shields.io/badge/flask-informational?style=flat&logo=flask&color=333333&labelColor=333333"
               alt="mysql"
             />
             <img
-              src="https://img.shields.io/badge/UI-sass-informational?style=flat&logo=sass&color=333333&labelColor=333333"
+              src="https://img.shields.io/badge/sass-informational?style=flat&logo=sass&color=333333&labelColor=333333"
               alt="UI sass"
             />
             <img
-              src="https://img.shields.io/badge/UI-tailwind-informational?style=flat&logo=tailwindcss&color=333333&labelColor=333333"
-              alt="UI tailwind"
+              src="https://img.shields.io/badge/tailwindcss-informational?style=flat&logo=tailwindcss&color=333333&labelColor=333333"
+              alt="UI tailwindcss"
             />
+
             <img
-              src="https://img.shields.io/badge/DB-mongodb-informational?style=flat&logo=mongodb&color=333333&labelColor=333333"
+              src="https://img.shields.io/badge/mongodb-informational?style=flat&logo=mongodb&color=333333&labelColor=333333"
               alt="mongodb"
             />
             <img
-              src="https://img.shields.io/badge/cloud-firebase-informational?style=flat&logo=firebase&color=333333&labelColor=333333"
+              src="https://img.shields.io/badge/firebase-informational?style=flat&logo=firebase&color=333333&labelColor=333333"
               alt="firebase"
             />
+
             <img
-              src="https://img.shields.io/badge/DB-mysql-informational?style=flat&logo=mysql&color=333333&labelColor=333333"
+              src="https://img.shields.io/badge/mysql-informational?style=flat&logo=mysql&color=333333&labelColor=333333"
               alt="mysql"
             />
           </div>

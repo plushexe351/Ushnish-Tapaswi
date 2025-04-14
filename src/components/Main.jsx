@@ -59,7 +59,7 @@ const pageContent = {
 
 const Main = ({ pageName }) => {
   return (
-    <AnimatePresence mode="wait">
+    <AnimatePresence>
       <motion.main
         key={pageName}
         initial={{ opacity: 0, y: "8vh" }}

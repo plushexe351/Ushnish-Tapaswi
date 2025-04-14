@@ -4,7 +4,7 @@ import ContactForm from "./ContactForm";
 
 const ContactTab = () => {
   const [view, setView] = useState("Message Me");
-  const navItems = ["Message Me"];
+  const navItems = ["Message Me", "Socials"];
   return (
     <div className="tab">
       <nav className="menubar">

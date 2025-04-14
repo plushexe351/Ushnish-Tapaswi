@@ -6,7 +6,6 @@ import "./ProfileCard.scss";
 import CV from "../../assets/CV.pdf";
 import CertificationsModal from "../Modals/Certifications/CertificationsModal";
 import { certificates } from "../SharedData";
-import LazyImage from "../LazyImage";
 
 const ProfileCard = () => {
   const [ModalOpen, setModalOpen] = useState(false);

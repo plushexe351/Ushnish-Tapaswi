@@ -5,19 +5,16 @@
   font-family: cursive;
   background-color: #141417;
   .menubar {
-    // background-color: #1e1e23;
     display: flex;
     padding: 1.5rem;
     align-items: center;
-    // display: none;
     .navbar {
       width: 100%;
-      // border: 1px solid rgba(128, 128, 128, 0.159);
-      border-radius: 1rem;
       display: flex;
-      justify-content: center;
+      justify-content: start;
       align-items: center;
       gap: 1rem;
+      overflow: auto;
     }
     .nav-item {
       text-align: center;
@@ -27,9 +24,12 @@
       cursor: pointer;
       color: gray;
       background-color: #1e1e23;
+      flex-shrink: 0;
+      min-width: max-content;
       &.active {
         // outline: 1px solid rgba(128, 128, 128, 0.659);
         background-color: #37373b;
+        // background-color: var(--accent-color);
         color: white;
       }
     }
@@ -48,10 +48,14 @@
     }
     .description {
       margin-top: 1rem;
-    }
-    .description {
       font-size: 1rem;
       color: gray;
+      line-height: 1.5rem;
+      p span {
+        font-weight: 600;
+        font-style: italic;
+        color: lightgray;
+      }
     }
     .social-badges {
       margin-block: 1rem;
@@ -59,53 +63,17 @@
       align-items: center;
       gap: 0.5rem;
     }
-    blockquote {
-      margin: 1em 0;
-      padding: 0.5em 1em;
-      border-left: 4px solid rgba(128, 128, 128, 0.459);
-      background-color: transparent;
-      font-style: italic;
-      color: #6a737d;
-      font-size: 1rem;
-      line-height: 1.5;
-    }
+
     .techstack {
-      margin-block: 1rem;
+      margin-top: 1rem;
       display: flex;
       flex-wrap: wrap;
       gap: 0.5rem;
       align-items: center;
       > * {
-        display: flex;
-        color: var(--secondary-text-color);
-        font-size: 0.8rem;
-        font-style: italic;
-        justify-content: center;
-        align-items: center;
-        gap: 0.5rem;
-        background-color: var(--bg-color);
-        border-radius: 2rem;
-
-        .icon {
-          width: 15px;
-          height: 15px;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          border-radius: 50%;
-          flex-shrink: 0;
-          // background-color: var(--primary-text-color);
-        }
-        &:nth-of-type(3) img,
-        &:last-of-type img {
-          filter: contrast(0%);
-        }
-        img {
-          height: 15px;
-          width: 15px;
-          border-radius: 50%;
-          object-fit: contain;
-        }
+        height: 1.3rem;
+        border-radius: 3rem;
+        width: max-content;
       }
     }
   }

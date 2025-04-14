@@ -25,7 +25,7 @@ $smallDevice: 480px;
       flex-direction: column;
       border-radius: 2rem;
       background-color: #141417;
-      padding: 1rem;
+      padding: 1.5rem;
       // border: 1px solid rgba(128, 128, 128, 0.159);
       overflow: auto;
       img {
@@ -64,11 +64,12 @@ $smallDevice: 480px;
         flex-direction: column;
         justify-content: center;
         gap: 0.5rem;
-        padding: 1rem;
+        // padding: 1rem;
 
         .project-description {
           font-weight: 300;
           color: lightgray;
+          line-height: 1.5rem;
           font-size: 0.9rem;
         }
         .project--tech-stack {
