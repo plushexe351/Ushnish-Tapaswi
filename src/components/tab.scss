@@ -69,11 +69,13 @@
       flex-wrap: wrap;
       gap: 0.5rem;
       align-items: center;
-      > * {
-        height: 1.3rem;
-        border-radius: 3rem;
-        width: max-content;
-      }
+    }
+
+    .social-badges *,
+    .techstack * {
+      height: 1.3rem;
+      border-radius: 3rem;
+      width: max-content;
     }
   }
   .message,
