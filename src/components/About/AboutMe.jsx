@@ -139,55 +139,51 @@ const AboutMe = () => {
               </div>
             ))} */}
             <img
-              src="https://img.shields.io/badge/Language-JavaScript-333333?style=flat&logo=react"
+              src="https://img.shields.io/badge/JavaScript-333333?style=flat&logo=javascript"
               alt="language js"
             />
             <img
-              src="https://img.shields.io/badge/Language-Python-333333?style=flat&logo=python"
+              src="https://img.shields.io/badge/Python-333333?style=flat&logo=python"
               alt="language py"
             />
             <img
-              src="https://img.shields.io/badge/Frontend-React-333333?style=flat&logo=react"
+              src="https://img.shields.io/badge/React-333333?style=flat&logo=react"
               alt="framework react"
             />
             <img
-              src="https://img.shields.io/badge/Frontend-Vite-333333?style=flat&logo=vite"
+              src="https://img.shields.io/badge/Vite-333333?style=flat&logo=vite"
               alt="bundler vite"
             />
             <img
-              src="https://img.shields.io/badge/Backend-Express.js-333333?style=flat&logo=express&logoColor=white
-"
+              src="https://img.shields.io/badge/Express.js-333333?style=flat&logo=express&logoColor=white"
               alt="backend express"
             />
-
             <img
-              src="https://img.shields.io/badge/Backend-Node.js-333333?style=flat&logo=node.js"
+              src="https://img.shields.io/badge/Node.js-333333?style=flat&logo=node.js"
               alt="backend node"
             />
             <img
-              src="https://img.shields.io/badge/Backend-Flask-333333?style=flat&logo=flask"
-              alt="mysql"
+              src="https://img.shields.io/badge/Flask-333333?style=flat&logo=flask"
+              alt="flask"
             />
             <img
-              src="https://img.shields.io/badge/UI-Sass-333333?style=flat&logo=sass"
+              src="https://img.shields.io/badge/Sass-333333?style=flat&logo=sass"
               alt="UI sass"
             />
             <img
-              src="https://img.shields.io/badge/UI-TailwindCSS-333333?style=flat&logo=tailwindcss"
+              src="https://img.shields.io/badge/TailwindCSS-333333?style=flat&logo=tailwindcss"
               alt="UI tailwindcss"
             />
-
             <img
-              src="https://img.shields.io/badge/Database-MongoDB-333333?style=flat&logo=mongodb"
+              src="https://img.shields.io/badge/MongoDB-333333?style=flat&logo=mongodb"
               alt="mongodb"
             />
             <img
-              src="https://img.shields.io/badge/Cloud-Firebase-333333?style=flat&logo=firebase"
+              src="https://img.shields.io/badge/Firebase-333333?style=flat&logo=firebase"
               alt="firebase"
             />
-
             <img
-              src="https://img.shields.io/badge/Database-MySQL-333333?style=flat&logo=mysql"
+              src="https://img.shields.io/badge/MySQL-333333?style=flat&logo=mysql"
               alt="mysql"
             />
           </div>
