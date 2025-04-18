@@ -56,14 +56,9 @@
         color: lightgray;
       }
     }
-    .social-badges {
-      margin-block: 1rem;
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-    }
 
-    .techstack {
+    .techstack,
+    .social-badges {
       margin-top: 1rem;
       display: flex;
       flex-wrap: wrap;
