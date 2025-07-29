@@ -30,13 +30,12 @@ const pageContent = {
       <GitHubCalendar
         username="plushexe351"
         token={token}
-        theme="custom"
+        theme="minecraft"
         background="#e91e6320"
         borderRadius=".6rem"
         cellSize="10"
         titleColor="white"
         fontSize="12"
-        labelColor="white"
         year={2024}
         customTheme={my_theme}
       />

@@ -30,9 +30,9 @@
       align-items: center;
       gap: 0.3rem;
       transition: 0.2s ease;
+      flex: 1;
       &.active {
         // outline: 1px solid rgba(128, 128, 128, 0.659);
-        flex: 1;
         background-color: #28282d;
         color: white;
         .icon {
