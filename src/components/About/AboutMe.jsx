@@ -1,70 +1,39 @@
 import React, { useState } from "react";
 import "../tab.scss";
 import { experiences } from "./experiences";
-import euphoria from "../../assets/euphoria-cert.jpeg";
+
 import "./AboutMe.scss";
 import placeholderImg from "../../assets/placeholder.png";
-import reactico from "../../assets/react.png";
-import nodeico from "../../assets/node.png";
-import expressico from "../../assets/express.png";
-import flaskico from "../../assets/flask.png";
-import mongodbico from "../../assets/mongodb.png";
-import mysqlico from "../../assets/mysql.png";
-import firebaseico from "../../assets/firebase.png";
-import sassico from "../../assets/sass.png";
-import tailwindico from "../../assets/tailwind.png";
+
+import { Info, Briefcase, Book } from "react-feather";
 
 const AboutMe = () => {
-  const [view, setView] = useState("About me");
-  const navItems = ["About me", "Experience"];
-  // const Technologies = [
-  //   {
-  //     title: "React",
-  //     icon: reactico,
-  //   },
-  //   {
-  //     title: "Node.js",
-  //     icon: nodeico,
-  //   },
-  //   {
-  //     title: "Express.js",
-  //     icon: expressico,
-  //   },
-  //   {
-  //     title: "Mongo DB",
-  //     icon: mongodbico,
-  //   },
-  //   {
-  //     title: "MySQL",
-  //     icon: mysqlico,
-  //   },
-  //   {
-  //     title: "Firebase",
-  //     icon: firebaseico,
-  //   },
-  //   {
-  //     title: "Tailwind",
-  //     icon: tailwindico,
-  //   },
-  //   {
-  //     title: "Sass",
-  //     icon: sassico,
-  //   },
-  //   {
-  //     title: "Flask",
-  //     icon: flaskico,
-  //   },
-  // ];
+  const navItems = [
+    {
+      title: "About me",
+      icon: <Info size={17} className="icon" />,
+    },
+    {
+      title: "Experience",
+      icon: <Briefcase size={17} className="icon" />,
+    },
+    // {
+    //   title: "Education",
+    //   icon: <Book size={17} className="icon" />,
+    // },
+  ];
+  const [view, setView] = useState(navItems[0].title);
   return (
     <div className="tab">
       <nav className="menubar">
         <div className="navbar">
           {navItems.map((item, index) => (
             <div
-              className={`nav-item ${view === item ? "active" : ""}`}
-              onClick={() => setView(item)}
+              className={`nav-item ${view === item.title ? "active" : ""}`}
+              onClick={() => setView(item.title)}
             >
-              {item}
+              {item.icon}
+              {view === item.title && <>{item.title}</>}
             </div>
           ))}
         </div>
