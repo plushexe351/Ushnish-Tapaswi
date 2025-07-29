@@ -33,7 +33,8 @@ const AboutMe = () => {
               onClick={() => setView(item.title)}
             >
               {item.icon}
-              {view === item.title && <>{item.title}</>}
+              {/* {view === item.title && <>{item.title}</>} */}
+              {item.title}
             </div>
           ))}
         </div>
