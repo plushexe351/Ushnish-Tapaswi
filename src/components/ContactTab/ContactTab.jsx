@@ -1,10 +1,14 @@
 import React, { useState } from "react";
 import "../tab.scss";
 import ContactForm from "./ContactForm";
+import { MessageCircle, Twitter } from "react-feather";
 
 const ContactTab = () => {
   const [view, setView] = useState("Message Me");
-  const navItems = ["Message Me", "Socials"];
+  const navItems = [
+    { title: "Message Me", icon: <MessageCircle size={17} className="icon" /> },
+    { title: "Socials", icon: <Twitter size={17} className="icon" /> },
+  ];
   return (
     <div className="tab">
       <nav className="menubar">
@@ -12,10 +16,11 @@ const ContactTab = () => {
           {navItems?.map((item, index) => (
             <div
               key={index}
-              className={`nav-item ${view === item ? "active" : ""}`}
-              onClick={() => setView(item)}
+              className={`nav-item ${view === item.title ? "active" : ""}`}
+              onClick={() => setView(item.title)}
             >
-              {item}
+              {item.icon}
+              {item.title}
             </div>
           ))}
         </div>
