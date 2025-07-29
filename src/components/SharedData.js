@@ -4,6 +4,7 @@ import fcc from "../assets/fcc-cert.jpeg";
 import euphoriaCert from "../assets/euphoria-cert.jpeg";
 import euphoria from "../assets/Euphoria.png";
 import chatapp from "../assets/chatApp.png";
+import mangastore from "../assets/mangastore.png";
 import flappyBird from "../assets/flappyBird.png";
 import iPodSimulator from "../assets/iPodSimulator.png";
 import noteme from "../assets/noteme.png";
@@ -75,6 +76,7 @@ const projects = [
     about:
       "A responsive chat app with user authentication and customizable profiles. Users can connect and chat in real time, sharing images and interacting through AI-powered messaging tools. Profiles display connections and allow for easy editing.",
   },
+
   {
     name: "github-contribution-calendar",
     description: "A React Component for Github Contributions Map",
@@ -91,6 +93,25 @@ const projects = [
     ],
     about:
       "A simple and customizable GitHub contribution calendar built with React. Visualizes your contributions for a given year using a color-coded calendar.",
+  },
+  {
+    name: "Ecommerce Mangastore",
+    description: "A Full Stack Ecommerce Mangastore",
+    techStack: ["React", "Firebase", "Sass"],
+    thumbnail: mangastore,
+    pinned: true,
+    livePreviewURL: "https://ecommerce-mangastore.vercel.app/",
+    sourceURL: "https://github.com/plushexe351/ecommerce-mangastore",
+    keyFeatures: [
+      "User Authentication",
+      "Admin Panel - Manage Books, Manage Orders and view sales analytics",
+      "Shopping Cart",
+      "Personalized Recommendations",
+      "AI Helper for navigation and product recommendations",
+      "Mark and share your favorite products",
+    ],
+    about:
+      "This project is an Ecommerce store for Manga, designed to provide users with a seamless shopping experience. The app is built using React for the frontend and Firebase for the backend. It is fully responsive and allows users to browse products, manage their cart, and place orders. Additionally, the app includes an admin panel for managing product listings, orders and sales.",
   },
   {
     name: "Euphoria ChatBot",
