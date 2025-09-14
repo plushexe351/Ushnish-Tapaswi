@@ -82,8 +82,8 @@ const TopProjects = ({ filter }) => {
         <div className="projects-container">
           {filteredProjects.map((project, index) => (
             <motion.div
-              initial={{ y: 100, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
+              initial={{ y: 100, opacity: 0, scale: 0.8 }}
+              animate={{ y: 0, opacity: 1, scale: 1 }}
               transition={{
                 type: "spring",
                 stiffness: 200,
