@@ -13,7 +13,7 @@ $smallDevice: 480px;
 $smallestDevice: 320px;
 
 :root {
-  --bg-color: black;
+  --bg-color: #0a0a0b;
   --primary-color: #141417;
   --accent-color: #e91e63;
   // --accent-color: #cc3568;
@@ -69,7 +69,7 @@ $smallestDevice: 320px;
 
 html {
   scroll-behavior: smooth;
-  background-color: black;
+  background-color: #0a0a0b;
 }
 
 .icon {
@@ -98,7 +98,7 @@ html {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: #000000;
+  background-color: #0a0a0b;
   color: white;
   min-height: 100vh;
   font-size: 0.9rem;

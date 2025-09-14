@@ -11,6 +11,8 @@ import noteme from "../assets/noteme.png";
 import etchasketch from "../assets/etchasketch.png";
 import gcc from "../assets/gcc.png";
 import pos from "../assets/pos.png";
+import whozzat from "../assets/whozzat.png";
+import floatify from "../assets/floatify.png";
 
 const certificates = [
   {
@@ -59,41 +61,49 @@ const certificates = [
 
 const projects = [
   {
-    name: "Twixt Chat",
-    description: "A Realtime Chat App with AI messaging tools",
+    name: "Whozzat",
+    description: "A Link in bio tool for all your links in one place",
     techStack: ["React", "Firebase", "Sass"],
-    thumbnail: chatapp,
+    thumbnail: whozzat,
     pinned: true,
-    livePreviewURL: "https://react-chat-app-jet.vercel.app/",
-    sourceURL: "https://github.com/plushexe351/react-chat-app",
+    livePreviewURL: "https://whozzat.vercel.app/",
+    sourceURL: "https://github.com/plushexe351/whozzat",
     keyFeatures: [
       "Fully Responsive",
-      "Search other users",
-      "Add friends",
-      "Real time chat",
-      "Share images",
+      "Email/Google authentication",
+      "Place all your links in one place with thumbnails",
+      "Stay organized with categories",
+      "Share your profile with just a click",
+      "View other users and their profiles",
+      "Detailed Analytics including Engagement metrics",
     ],
+    about: "A full stack link-in-bio tool for all your links in one place.",
+  },
+  {
+    name: "react-floatify",
+    description: "A lightweight, customizable toast component library",
+    techStack: ["React", "Vite", "TypeScript", "Sass", "framer-motion"],
+    thumbnail: floatify,
+    pinned: true,
+    livePreviewURL: "https://toasty-playground-ten.vercel.app/",
+    sourceURL: "https://github.com/plushexe351/react-floatify",
+    keyFeatures: [
+      "Lightweight and customizable React toast notifications",
+      "Multiple toast types: success, error, warning, default",
+      "Variants for styling: regular, outlined, contained",
+      "Customizable duration, font size, and icon size",
+      "Built-in progress bar with optional disable",
+      "Animation support via Framer Motion",
+      "Positioning flexibility: top/bottom + left/center/right",
+      "Simple API with hooks (useToast) for easy integration",
+      "TypeScript support with exported types",
+      "Minimal CSS — themable with your own styles",
+    ],
+
     about:
-      "A responsive chat app with user authentication and customizable profiles. Users can connect and chat in real time, sharing images and interacting through AI-powered messaging tools. Profiles display connections and allow for easy editing.",
+      "A lightweight and customizable toast component library for react built using TypeScript, React, Vite, Sass and framer-motion for animations.",
   },
 
-  {
-    name: "github-contribution-calendar",
-    description: "A React Component for Github Contributions Map",
-    techStack: ["React", "CSS"],
-    thumbnail: gcc,
-    pinned: true,
-    livePreviewURL: "",
-    sourceURL: "https://github.com/plushexe351/github-contribution-calendar",
-    keyFeatures: [
-      "Displays a GitHub contribution calendar for a specific year",
-      "Customizable appearance (cell size, themes, labels, etc.)",
-      "Shows total contributions for the year",
-      "Tooltips with contribution count on hover",
-    ],
-    about:
-      "A simple and customizable GitHub contribution calendar built with React. Visualizes your contributions for a given year using a color-coded calendar.",
-  },
   {
     name: "Ecommerce Mangastore",
     description: "A Full Stack Ecommerce Mangastore",
@@ -112,6 +122,41 @@ const projects = [
     ],
     about:
       "This project is an Ecommerce store for Manga, designed to provide users with a seamless shopping experience. The app is built using React for the frontend and Firebase for the backend. It is fully responsive and allows users to browse products, manage their cart, and place orders. Additionally, the app includes an admin panel for managing product listings, orders and sales.",
+  },
+  {
+    name: "github-contribution-calendar",
+    description: "A React Component for Github Contributions Map",
+    techStack: ["React", "CSS"],
+    thumbnail: gcc,
+    pinned: true,
+    livePreviewURL: "",
+    sourceURL: "https://github.com/plushexe351/github-contribution-calendar",
+    keyFeatures: [
+      "Displays a GitHub contribution calendar for a specific year",
+      "Customizable appearance (cell size, themes, labels, etc.)",
+      "Shows total contributions for the year",
+      "Tooltips with contribution count on hover",
+    ],
+    about:
+      "A simple and customizable GitHub contribution calendar built with React. Visualizes your contributions for a given year using a color-coded calendar.",
+  },
+  {
+    name: "Twixt Chat",
+    description: "A Realtime Chat App with AI messaging tools",
+    techStack: ["React", "Firebase", "Sass"],
+    thumbnail: chatapp,
+    pinned: true,
+    livePreviewURL: "https://react-chat-app-jet.vercel.app/",
+    sourceURL: "https://github.com/plushexe351/react-chat-app",
+    keyFeatures: [
+      "Fully Responsive",
+      "Search other users",
+      "Add friends",
+      "Real time chat",
+      "Share images",
+    ],
+    about:
+      "A responsive chat app with user authentication and customizable profiles. Users can connect and chat in real time, sharing images and interacting through AI-powered messaging tools. Profiles display connections and allow for easy editing.",
   },
   {
     name: "Euphoria ChatBot",
