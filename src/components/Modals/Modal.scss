@@ -13,15 +13,13 @@
 
   .modal-container {
     overscroll-behavior: contain;
-    // border: 1px solid rgba(128, 128, 128, 0.259);
-    background-color: var(--primary-color);
+    background-color: var(--bg-color);
     max-height: 100%;
     max-width: 100%;
-    // min-width: 300px;
     height: max-content;
     width: 500px;
     padding: 1rem;
-    border-radius: 2rem;
+    border-radius: 1rem;
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
@@ -62,7 +60,7 @@
     align-items: center;
     gap: 0.5rem;
     padding-block: 1rem;
-    border-bottom: 1px solid rgba(128, 128, 128, 0.259);
+    border-bottom: 1px solid var(--secondary-color);
     .certificate-logo {
       width: 50px;
       height: 50px;
@@ -96,7 +94,7 @@
         text-decoration: none;
         padding: 0.4rem 0.8rem;
         border-radius: 3rem;
-        border: 1px solid gray;
+        border: 1px solid var(--border-color);
       }
     }
   }

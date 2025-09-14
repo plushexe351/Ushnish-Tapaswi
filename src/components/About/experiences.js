@@ -11,7 +11,7 @@ const experiences = [
     duration: "Jul 2025 - Present",
     location: "· Remote",
     description: [
-      "Build Responsive UI elements for an ecommerce store serving thousands of userss",
+      "Build Responsive UI elements for an ecommerce store serving thousands of users",
       "Contribute to backend operations and build application front-end for administrative usage",
       "Collaborate with designers and developers to make informed decisions",
     ],
@@ -35,7 +35,7 @@ const experiences = [
     location: "Kolkata, West Bengal, India · Hybrid",
     description: [
       "Developing robust and user-friendly software solutions.",
-      "Working on an industry-grade Full Stack Purchase Order Management System with JWT authentication, user management, vendor management, requisition management, approval workflow, report generation, and more.",
+      "Worked on an industry-grade Full Stack Purchase Order Management System with JWT authentication, user management, vendor management, requisition management, approval workflow, report generation, and more.",
     ],
     skills: [
       "MongoDB",

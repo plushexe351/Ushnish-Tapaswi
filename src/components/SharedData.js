@@ -145,7 +145,6 @@ const projects = [
     description: "A Realtime Chat App with AI messaging tools",
     techStack: ["React", "Firebase", "Sass"],
     thumbnail: chatapp,
-    pinned: true,
     livePreviewURL: "https://react-chat-app-jet.vercel.app/",
     sourceURL: "https://github.com/plushexe351/react-chat-app",
     keyFeatures: [
@@ -163,7 +162,6 @@ const projects = [
     description: "A Gemini Based ChatBot-cum-assistant",
     techStack: ["HTML", "CSS", "Google Gemini", "Node.js", "Express.js"],
     thumbnail: euphoria,
-    pinned: false,
     livePreviewURL: "https://euphoria-chatbot.onrender.com/",
     sourceURL: "https://github.com/plushexe351/Euphoria-ChatBot",
     keyFeatures: [

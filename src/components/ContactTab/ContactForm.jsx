@@ -109,7 +109,7 @@ const ContactForm = () => {
           "Loading..."
         ) : (
           <>
-            Send <Send className="icon" size={15} />
+            Send <Send className="icon" size={10} />
           </>
         )}
       </button>

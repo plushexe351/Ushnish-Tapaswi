@@ -7,6 +7,7 @@ import etchasketch from "../../assets/etchasketch.png";
 import { Context } from "../../context/context";
 import { useNavigate } from "react-router-dom";
 import { projects } from "../SharedData";
+import { motion } from "framer-motion";
 
 const TopProjects = ({ filter }) => {
   const Navigate = useNavigate();
@@ -80,7 +81,18 @@ const TopProjects = ({ filter }) => {
         </p>
         <div className="projects-container">
           {filteredProjects.map((project, index) => (
-            <ProjectCard project={project} key={index} />
+            <motion.div
+              initial={{ y: 100, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{
+                type: "spring",
+                stiffness: 200,
+                damping: 18,
+                delay: index * 0.1,
+              }}
+            >
+              <ProjectCard project={project} key={index} />
+            </motion.div>
           ))}
         </div>
       </div>

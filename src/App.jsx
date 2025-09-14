@@ -9,7 +9,6 @@ import Footer from "./components/Footer/Footer";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import ScrollToTop from "./ScrollToTop";
-import ProjectsModal from "./components/Modals/Project/ProjectsModal";
 import { useContext } from "react";
 import { Context } from "./context/context";
 import ProjectDetails from "./pages/ProjectDetails/ProjectDetails";

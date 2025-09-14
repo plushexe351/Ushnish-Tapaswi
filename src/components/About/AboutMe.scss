@@ -3,12 +3,12 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  overflow: hidden;
   .experience {
     display: flex;
     justify-content: center;
     align-items: start;
     gap: 1rem;
-    // border: 1px solid rgba(128, 128, 128, 0.259);
     .experience-details {
       display: flex;
       flex-direction: column;
@@ -24,6 +24,7 @@
       color: rgb(174, 174, 174);
     }
     .experience-description {
+      color: rgb(219, 219, 219);
       margin-block: 1rem;
       display: flex;
       flex-direction: column;

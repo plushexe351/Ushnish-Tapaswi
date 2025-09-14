@@ -6,6 +6,7 @@ import "./AboutMe.scss";
 import placeholderImg from "../../assets/placeholder.png";
 
 import { Info, Briefcase, Book } from "react-feather";
+import { AnimatePresence, motion } from "framer-motion";
 
 const AboutMe = () => {
   const navItems = [
@@ -40,9 +41,20 @@ const AboutMe = () => {
         </div>
       </nav>
       {view === "Experience" && (
-        <div className="experiences">
+        <motion.div className="experiences">
           {experiences.map((experience, index) => (
-            <div className="experience" key={index}>
+            <motion.div
+              className="experience"
+              key={index}
+              initial={{ y: -50, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{
+                type: "spring",
+                stiffness: 200,
+                damping: 18,
+                delay: index * 0.1,
+              }}
+            >
               <img src={experience.companyLogo || placeholderImg} alt="" />
               <div className="experience-details">
                 <h3 className="experience-title">{experience.title}</h3>
@@ -64,50 +76,34 @@ const AboutMe = () => {
                   ))}
                 </div>
               </div>
-            </div>
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
       )}
-      {view === "About me" && (
-        <div className="aboutMe">
-          <h1 className="greet">
-            Hey 👋 I'm <strong>Ushnish Tapaswi</strong>
-          </h1>
-          {/* <div className="styled-break"></div> */}
-          {/* <div className="social-badges">
-            <a href="https://www.linkedin.com/in/ushnish-tapaswi-719489267/">
-              <img
-                src="https://img.shields.io/badge/linkedin-informational?style=flat&logo=linkedin&color=0A66C2"
-                alt="social linkedin"
-              />
-            </a>
 
-            <a href="https://plushexe351.github.io/Personal-Website">
-              <img
-                src="https://img.shields.io/badge/plushexe351-whitesmoke?style=flat&logo=github&color=gray"
-                alt="link to my website"
-              />
-            </a>
-          </div> */}
+      {view === "About me" && (
+        <motion.div
+          className="aboutMe"
+          initial={{ opacity: 0, x: 30 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.25 }}
+        >
+          <h1 className="greet">Hey 👋 I'm Ushnish Tapaswi</h1>
           <div className="description">
             <p>
-              I'm a full-stack web developer and student. I build user-centric
-              design and robust backend systems that work well together. In
-              other words, I'm an engineer of online experiences. I craft
-              invisible threads that connect users with technology. Here's what
-              I work with.
+              I'm a <strong>Full-stack web developer</strong>. I build
+              user-centric design and robust backend systems that work well
+              together. In other words, I'm an engineer of online experiences. I
+              craft invisible threads that connect users with technology. Here's
+              what I work with.
             </p>
           </div>
 
           <div className="techstack">
-            {/* {Technologies.map((tech, index) => (
-              <div className="tech">
-                <div className="icon">
-                  <img src={tech.icon} alt="" />
-                </div>
-                {tech.title}
-              </div>
-            ))} */}
+            <img
+              src="https://img.shields.io/badge/TypeScript-333333?style=flat&logo=typescript"
+              alt="language ts"
+            />
             <img
               src="https://img.shields.io/badge/JavaScript-333333?style=flat&logo=javascript"
               alt="language js"
@@ -157,7 +153,7 @@ const AboutMe = () => {
               alt="mysql"
             />
           </div>
-        </div>
+        </motion.div>
       )}
     </div>
   );

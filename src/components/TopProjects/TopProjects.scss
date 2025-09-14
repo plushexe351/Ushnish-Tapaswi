@@ -23,14 +23,13 @@ $smallDevice: 480px;
       // flex: 0 1 calc(50% - 8px);
       display: flex;
       flex-direction: column;
-      border-radius: 2rem;
-      background-color: #141417;
+      border-radius: 1rem;
       padding: 1.5rem;
-      // border: 1px solid rgba(128, 128, 128, 0.159);
+      border: 1px solid var(--border-color);
       overflow: auto;
       img {
         margin-block: 1rem;
-        border-radius: 1rem;
+        border-radius: 0.4rem;
         width: 100%;
         object-fit: cover;
       }
@@ -41,7 +40,6 @@ $smallDevice: 480px;
         align-items: center;
         text-align: center;
         color: rgb(164, 164, 164);
-        background-color: #141417;
         font-size: 0.9rem;
         font-weight: 600;
         font-style: italic;
