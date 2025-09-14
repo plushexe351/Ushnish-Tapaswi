@@ -36,7 +36,7 @@ const pageContent = {
         cellSize="11"
         titleColor="white"
         fontSize="12"
-        year={2024}
+        year={2025}
         customTheme={my_theme}
       />
     </>
