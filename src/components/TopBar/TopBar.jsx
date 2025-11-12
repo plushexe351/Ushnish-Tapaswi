@@ -1,7 +1,14 @@
 import React, { useContext, useEffect, useState } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 import "./TopBar.scss";
-import { BookOpen, Grid, MessageSquare, MoreVertical } from "react-feather";
+import {
+  BookOpen,
+  Grid,
+  MessageSquare,
+  MoreVertical,
+  Sun,
+  Moon,
+} from "react-feather";
 import { Context } from "../../context/context";
 
 const TopBar = () => {
@@ -9,7 +16,8 @@ const TopBar = () => {
   const [visible, setVisible] = useState(true);
   const [prevScrollY, setPrevScrollY] = useState(0);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const { selectedProject, setSelectedProject } = useContext(Context);
+  const { selectedProject, setSelectedProject, theme, toggleTheme } =
+    useContext(Context);
   const hasSelectedProject = Object.entries(selectedProject).length;
 
   const navLinks = [
@@ -85,6 +93,17 @@ const TopBar = () => {
           <h4 onClick={() => Navigate("/overview")}>Ushnish</h4>{" "}
           <div className="circle"></div>
         </div>
+        <button
+          className="theme-toggle"
+          onClick={toggleTheme}
+          aria-label="Toggle theme"
+        >
+          {theme === "dark" ? (
+            <Sun className="icon" size={5} />
+          ) : (
+            <Moon className="icon" size={5} />
+          )}
+        </button>
         <MoreVertical
           className="menu icon"
           onClick={(e) => {

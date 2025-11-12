@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import ProfileCard from "./ProfileCard/ProfileCard";
 import AboutMe from "./About/AboutMe";
 import TopProjects from "./TopProjects/TopProjects";
@@ -11,6 +11,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { ChevronRight } from "react-feather";
 import { Link } from "react-router-dom";
 import Project from "./Project/Project";
+import { Context } from "../context/context";
 const my_theme = {
   noContributions: "#e91e6320",
   low: "#C2185B",
@@ -18,45 +19,47 @@ const my_theme = {
   high: "#F06292",
   veryHigh: "#F8BBD0",
 };
-const pageContent = {
-  overview: (
-    <>
-      <AboutMe />
-      <TopProjects filter="work" />
-      <TopProjects filter="pinned" />
-      <Link className="see-more" to="/projects">
-        See More <ChevronRight className="icon" />
-      </Link>
-      <GitHubCalendar
-        username="plushexe351"
-        token={token}
-        theme="minecraft"
-        background="#e91e6320"
-        borderRadius=".6rem"
-        cellSize="11"
-        titleColor="white"
-        fontSize="12"
-        year={2025}
-        customTheme={my_theme}
-      />
-    </>
-  ),
-  projects: (
-    <>
-      <TopProjects filter="work" />
-      <TopProjects filter="all" />
-    </>
-  ),
-  "project-details": (
-    <>
-      <Project />
-    </>
-  ),
-  contact: <ContactTab />,
-  blog: <WIP />,
-};
-
 const Main = ({ pageName }) => {
+  const { theme } = useContext(Context);
+
+  const pageContent = {
+    overview: (
+      <>
+        <AboutMe />
+        <TopProjects filter="work" />
+        <TopProjects filter="pinned" />
+        <Link className="see-more" to="/projects">
+          See More <ChevronRight className="icon" />
+        </Link>
+        <GitHubCalendar
+          username="plushexe351"
+          token={token}
+          theme="minecraft"
+          background="#e91e6320"
+          borderRadius=".6rem"
+          cellSize="11"
+          titleColor={theme === "dark" ? "white" : "black"}
+          fontSize="12"
+          year={2025}
+          customTheme={my_theme}
+        />
+      </>
+    ),
+    projects: (
+      <>
+        <TopProjects filter="work" />
+        <TopProjects filter="all" />
+      </>
+    ),
+    "project-details": (
+      <>
+        <Project />
+      </>
+    ),
+    contact: <ContactTab />,
+    blog: <WIP />,
+  };
+
   return (
     <AnimatePresence>
       <motion.main

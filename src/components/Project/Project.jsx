@@ -29,7 +29,7 @@ const token = import.meta.env.VITE_API_GITHUB_ACCESS_TOKEN;
 
 const Project = () => {
   const Navigate = useNavigate();
-  const { setSelectedProject } = useContext(Context);
+  const { setSelectedProject, theme } = useContext(Context);
   const { id } = useParams();
 
   useEffect(() => {
@@ -123,7 +123,7 @@ const Project = () => {
           theme="minecraft"
           background="transparent"
           cellSize="11"
-          titleColor="white"
+          titleColor={theme === "dark" ? "white" : "black"}
           fontSize="12"
           year="2024"
           // labelColor="white"

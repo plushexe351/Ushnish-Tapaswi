@@ -27,6 +27,10 @@ $smallDevice: 480px;
       padding: 1.5rem;
       border: 1px solid var(--border-color);
       overflow: auto;
+      transition: 0.2s ease;
+      &:hover {
+        border: 1px solid var(--border-color-hover);
+      }
       img {
         margin-block: 1rem;
         border-radius: 0.4rem;
@@ -39,7 +43,7 @@ $smallDevice: 480px;
         justify-content: space-between;
         align-items: center;
         text-align: center;
-        color: rgb(164, 164, 164);
+        color: var(--text-color-secondary);
         font-size: 0.9rem;
         font-weight: 600;
         font-style: italic;
@@ -66,23 +70,23 @@ $smallDevice: 480px;
 
         .project-description {
           font-weight: 300;
-          color: lightgray;
+          color: var(--text-color-secondary);
           line-height: 1.5rem;
           font-size: 0.9rem;
         }
         .project--tech-stack {
           font-weight: 300;
-          color: lightgray;
+          color: var(--text-color-secondary);
           display: flex;
           flex-wrap: wrap;
           gap: 0.5rem;
           margin-top: 0.5rem;
           align-items: center;
           .tech {
-            background-color: #26262a;
+            background-color: var(--pill-color);
             padding: 0.2rem 0.5rem;
             border-radius: 1rem;
-            border: 1px solid rgba(128, 128, 128, 0.159);
+            border: 1px solid var(--border-color-secondary);
           }
         }
       }

@@ -11,6 +11,10 @@
   left: 0;
   z-index: 9999;
 
+  [data-theme="light"] & {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
   .modal-container {
     overscroll-behavior: contain;
     background-color: var(--bg-color);
@@ -67,7 +71,7 @@
       flex-shrink: 0;
       border-radius: 50%;
       object-fit: contain;
-      background-color: white;
+      background-color: var(--primary-color);
     }
     .certificate-details {
       line-height: 1.5em;
@@ -79,7 +83,7 @@
         font-weight: 300;
       }
       .certificate-issued-on {
-        color: rgb(197, 197, 197);
+        color: var(--text-color-secondary);
         font-weight: 300;
       }
       .certificate-credentials-link {
@@ -87,7 +91,7 @@
         justify-content: center;
         gap: 0.5rem;
         align-items: center;
-        color: rgb(226, 226, 226);
+        color: var(--text-color);
         width: max-content;
         font-weight: 600;
         margin-top: 0.3rem;

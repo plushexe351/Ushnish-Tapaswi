@@ -62,7 +62,7 @@ $smallDevice: 480px;
 
     @include smallDevice {
       overflow: unset;
-      padding: 1rem;
+      // padding: 1rem;
     }
 
     .navLinks {
@@ -73,7 +73,8 @@ $smallDevice: 480px;
         display: none;
         &.mobile {
           padding: 1rem;
-          background-color: #141414;
+          background-color: var(--primary-color);
+          border: 1px solid var(--border-color);
           border-radius: 2rem;
           position: absolute;
           top: calc(100% + 1rem);
@@ -82,6 +83,37 @@ $smallDevice: 480px;
           align-items: start;
           flex-direction: column;
         }
+      }
+    }
+
+    .theme-toggle {
+      background: transparent;
+      // border: 1px solid var(--border-color);
+      border: none;
+      border-radius: 1.5rem;
+      padding: 0.7rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      margin-left: auto;
+      // margin-right: 0.5rem;
+      color: var(--text-color-secondary);
+
+      &:hover {
+        background-color: var(--secondary-color);
+        border-color: var(--accent-color);
+        color: var(--accent-color);
+      }
+
+      .icon {
+        stroke: currentColor;
+      }
+
+      @include smallDevice {
+        margin-right: 0;
+        padding: 0.6rem;
       }
     }
 
@@ -101,15 +133,14 @@ $smallDevice: 480px;
       justify-content: center;
       align-items: center;
       gap: 0.5rem;
-      color: white;
       text-decoration: none;
-      color: gray;
+      color: var(--text-color-secondary);
       transition: 0.1s ease;
       // @include mediumDevice {
       //   display: none;
       // }
       &.active {
-        color: white;
+        color: var(--text-color);
       }
     }
   }

@@ -21,7 +21,7 @@
       border-radius: 0.7rem;
       padding: 0.6rem 1rem;
       cursor: pointer;
-      color: gray;
+      color: var(--text-color-secondary);
       background-color: var(--ternary-color);
       border: 1px solid var(--border-color-secondary);
       flex-shrink: 0;
@@ -34,7 +34,7 @@
       &.active {
         // flex: 1;
         background-color: var(--secondary-color);
-        color: white;
+        color: var(--text-color);
         .icon {
           // stroke: white;
           stroke-width: 2px;
@@ -54,7 +54,7 @@
     .description {
       margin-top: 1rem;
       font-size: 1rem;
-      color: rgb(137, 137, 137);
+      color: var(--text-color-secondary);
       line-height: 1.5rem;
       strong {
         font-weight: normal;
@@ -64,7 +64,7 @@
       p span {
         font-weight: 600;
         font-style: italic;
-        color: lightgray;
+        color: var(--text-color-secondary);
       }
     }
 

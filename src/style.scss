@@ -18,9 +18,28 @@ $smallestDevice: 320px;
   --secondary-color: rgba(128, 128, 128, 0.15);
   --ternary-color: #28282d37;
   --border-color: rgba(128, 128, 128, 0.3);
+  --border-color-hover: rgba(128, 128, 128, 0.5);
   --border-color-secondary: rgba(128, 128, 128, 0.1);
   --accent-color: #e91e63;
   --pill-color: #26262a;
+  --text-color: white;
+  --text-color-secondary: gray;
+  --text-color-muted: rgba(255, 255, 255, 0.538);
+}
+
+[data-theme="light"] {
+  --bg-color: #ffffff;
+  --primary-color: #ffffff;
+  --secondary-color: rgba(128, 128, 128, 0.12);
+  --ternary-color: rgba(128, 128, 128, 0.08);
+  --border-color: rgba(128, 128, 128, 0.35);
+  --border-color-hover: rgba(128, 128, 128, 0.5);
+  --border-color-secondary: rgba(128, 128, 128, 0.2);
+  --accent-color: #e91e63;
+  --pill-color: #e8e8e8;
+  --text-color: #0a0a0a;
+  --text-color-secondary: #2a2a2a;
+  --text-color-muted: rgba(0, 0, 0, 0.7);
 }
 
 // Mixin for medium devices
@@ -65,6 +84,14 @@ $smallestDevice: 320px;
   background-color: rgba(186, 186, 186, 0.5);
 }
 
+[data-theme="light"] ::-webkit-scrollbar-thumb {
+  background-color: rgba(128, 128, 128, 0.4);
+}
+
+[data-theme="light"] ::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(128, 128, 128, 0.6);
+}
+
 ::-webkit-scrollbar-track {
   background-color: transparent;
   border-radius: 4px;
@@ -73,6 +100,11 @@ $smallestDevice: 320px;
 html {
   scroll-behavior: smooth;
   background-color: #0a0a0b;
+  transition: background-color 0.3s ease;
+}
+
+[data-theme="light"] html {
+  background-color: #f5f5f5;
 }
 
 .icon {
@@ -86,7 +118,7 @@ html {
   height: 3px;
   width: 3px;
   border-radius: 50%;
-  background-color: gray;
+  background-color: var(--text-color-secondary);
 }
 
 // .styled-break {
@@ -102,9 +134,10 @@ html {
   align-items: center;
   flex-direction: column;
   background-color: var(--bg-color);
-  color: white;
+  color: var(--text-color);
   min-height: 100vh;
   font-size: 0.9rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 main {
@@ -142,7 +175,7 @@ main {
 
 .see-more {
   text-decoration: none;
-  color: white;
+  color: var(--text-color);
   font-size: 0.9rem;
   display: flex;
   justify-content: start;

@@ -32,7 +32,7 @@ $smallestDevice: 320px;
     align-items: center;
     gap: 0.5rem;
     cursor: pointer;
-    color: lightgray;
+    color: var(--text-color-secondary);
     &:hover {
       text-decoration: underline;
     }
@@ -54,12 +54,12 @@ $smallestDevice: 320px;
     }
   }
   .project-type .overview-content {
-    background-color: #26262a;
+    background-color: var(--pill-color);
     padding: 0.2rem 0.5rem;
     width: max-content;
     font-size: 0.9rem;
     border-radius: 1rem;
-    border: 1px solid rgba(128, 128, 128, 0.159);
+    border: 1px solid var(--border-color-secondary);
   }
   .project-buttons {
     display: flex;
@@ -68,8 +68,8 @@ $smallestDevice: 320px;
     gap: 1rem;
     a {
       padding: 0.6rem 1.5rem;
-      border: 1px solid rgba(128, 128, 128, 0.259);
-      color: white;
+      border: 1px solid var(--border-color);
+      color: var(--text-color);
       border-radius: 0.7rem;
       text-decoration: none;
       display: flex;
@@ -77,8 +77,8 @@ $smallestDevice: 320px;
       align-items: center;
       gap: 0.5rem;
       &:nth-of-type(2) {
-        background-color: white;
-        color: black;
+        background-color: var(--text-color);
+        color: var(--bg-color);
       }
     }
   }
@@ -114,19 +114,19 @@ $smallestDevice: 320px;
       gap: 1rem;
       .overview-title {
         font-size: 0.9rem;
-        color: rgba(255, 255, 255, 0.538);
+        color: var(--text-color-muted);
         font-weight: 300;
       }
       .overview-content {
         display: block;
         margin-top: 0.5rem;
         text-decoration: none;
-        color: lightgray;
+        color: var(--text-color-secondary);
       }
       .project-tech-stack {
         .overview-content {
           font-weight: 300;
-          color: lightgray;
+          color: var(--text-color-secondary);
           display: flex;
           flex-wrap: wrap;
           gap: 0.5rem;
@@ -152,7 +152,7 @@ $smallestDevice: 320px;
       font-size: 1.3rem;
       font-weight: 600;
       font-style: italic;
-      color: gray;
+      color: var(--text-color-secondary);
       padding-bottom: 1rem;
     }
     .project-about,
