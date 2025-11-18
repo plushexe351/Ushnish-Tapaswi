@@ -121,6 +121,10 @@ const AboutMe = () => {
               alt="bundler vite"
             />
             <img
+              src="https://img.shields.io/badge/Next.js-333333?style=flat&logo=next.js"
+              alt="framework next.js"
+            />
+            <img
               src="https://img.shields.io/badge/Express.js-333333?style=flat&logo=express&logoColor=white"
               alt="backend express"
             />

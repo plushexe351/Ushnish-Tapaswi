@@ -45,7 +45,7 @@ const ProfileCard = () => {
           </p>
         </div>
       </div>
-      <div className="description">20, MERN Stack and Python Developer</div>
+      <div className="description">21, Full Stack Developer</div>
       <div className="actions">
         <a href={CV} download="Ushnish_Tapaswi.pdf">
           Resume

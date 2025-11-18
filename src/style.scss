@@ -23,13 +23,13 @@ $smallestDevice: 320px;
   --accent-color: #e91e63;
   --pill-color: #26262a;
   --text-color: white;
-  --text-color-secondary: gray;
+  --text-color-secondary: rgb(171, 171, 171);
   --text-color-muted: rgba(255, 255, 255, 0.538);
 }
 
 [data-theme="light"] {
   --bg-color: #ffffff;
-  --primary-color: #ffffff;
+  --primary-color: #ffebeb57;
   --secondary-color: rgba(128, 128, 128, 0.12);
   --ternary-color: rgba(128, 128, 128, 0.08);
   --border-color: rgba(128, 128, 128, 0.35);
